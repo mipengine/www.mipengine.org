@@ -57,3 +57,14 @@ typings/
 # dotenv environment variables file
 .env
 
+.DS_Store
+.idea/
+/db.json
+.deploy*/
+
+/dist/
+/source/examples
+/tools/mip-master.zip
+/tools/mip-extensions-master.zip
+/tools/mip-master
+/tools/mip-extensions-master

@@ -1,0 +1,73 @@
+/**
+ * 文档页面
+ */
+
+.doc-content {
+    background-color: #fff;
+    max-width: 1000px;
+    padding: 15px;
+}
+
+.doc-content:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.doc-article {
+    float: right;
+    width: 100%;
+}
+
+/*sidebar*/
+.doc-left-sidebar {
+    display: none;
+    float: left;
+    width: 180px;
+    margin-left: -180px;
+    padding-bottom: 40px;
+    line-height: 2.1;
+}
+.doc-left-sidebar h3 {
+    padding: 10px 0 0;
+    position: relative;
+    display: block;
+    font-weight: 700;
+    font-size: 15px;
+    color: #333;
+}
+.doc-left-sidebar a {
+    color: #666;
+    display: block;
+    font-size: 14px;
+    position: relative;
+}
+.doc-left-sidebar a.current {
+    color: #009aed;
+}
+.doc-left-sidebar a.current:before {
+    content: '';
+    width: 5px;
+    height: 1px;
+    top: 1px;
+    display: inline-block;
+    border: 6px solid transparent;
+    border-left: 8px solid #009aed;
+    border-right: 0;
+    border-radius: 1px;
+    position: relative;
+}
+
+@media screen and (min-width: 767px) {
+    .doc-left-sidebar {
+        display: block;
+    }
+    .doc-content-inner {
+        margin-left: 180px;
+    }
+    .doc-content {
+        margin: 20px auto 0;
+        padding: 60px 55px 40px;
+    }
+}
+

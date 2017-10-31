@@ -1,0 +1,184 @@
+/**
+ * 头部
+ */
+
+.header {
+    background-color: #0c1a44;
+    position: relative;
+    z-index: 1000;
+    padding: 0 10px;
+}
+.header ul {
+    list-style: none;
+}
+.header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.header-flex {
+    display: -webkit-box;
+    display:    -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         box;
+    display:         flex;
+
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+    -webkit-box-lines: single;
+       -moz-box-lines: single;
+    -webkit-box-orient: horizontal;
+       -moz-box-orient: horizontal;
+    -ms-flex-align: center;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+}
+.header-logo {
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+            box-flex: 1;
+    -webkit-flex: 0 42px;
+        -ms-flex: 0 42px;
+            flex: 0 42px;
+}
+.header-logo a {
+    display: block;
+    overflow: hidden;
+    width: 81px;
+    height: 42px;
+    white-space: nowrap;
+    font-size: 0;
+    cursor: pointer;
+    background: url(/static/img/mip_logo_white_8c902ec.png);
+    -webkit-background-size: 100% 100%;
+       -moz-background-size: 100% 100%;
+            background-size: 100% 100%;
+}
+.header-nav {
+    font-size: 14px;
+    line-height: 50px;
+    display: none;
+    padding-left: 20px;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 auto;
+    -ms-flex: 1 auto;
+    flex: 1 auto;
+    text-align: right;
+}
+.header-nav-list > li {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+}
+.header-nav-list > li > a,
+.header-nav-list > li > span {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0 5px;
+}
+.header-nav-list li > span:after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    border: 4px solid transparent;
+    top: 1px;
+    border-color: #fff transparent transparent;
+    left: 3px;
+}
+.header-nav-list li:hover > span:after {
+    border-color: transparent transparent #fff;
+    top: -3px;
+}
+.header-nav-list > li > a:hover {
+    color: #fff;
+}
+.header-nav-list > li ul {
+    display: none;
+    text-align: left;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+    left: -30px;
+    top: 50px;
+}
+.header-nav-list > li:hover ul {
+    display: block;
+}
+.header-nav-list > li ul li:hover {
+    background-color: #eee;
+}
+.header-nav-list > li ul a {
+    white-space: nowrap;
+    padding: 0 20px;
+    color: #666;
+    display: block;
+}
+@media screen and (min-width: 767px) {
+    .header-nav {
+        display: block;
+    }
+}
+.header-mobile-nav-toggle {
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .header-mobile-nav-toggle {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        width: 25px;
+        height: 20px;
+        margin: auto;
+        opacity: .5;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+        -ms-transition: .2s;
+        transition: .2s;
+        cursor: pointer;
+        outline: none;
+        background-color: transparent;
+        border: none;
+        display: block;
+    }
+
+    .header-mobile-nav-toggle span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        border-radius: 2px;
+        background: #fff;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+        transition: .4s;
+        -webkit-transform-origin: 0;
+        -moz-transform-origin: 0;
+        -ms-transform-origin: 0;
+        transform-origin: 0;
+    }
+    .header-mobile-nav-toggle span:nth-child(2) {
+        top: 9px;
+    }
+    .header-mobile-nav-toggle span:nth-child(3) {
+        top: 18px;
+    }
+
+    .header-logo a {
+        width: 68px;
+        height: 33px;
+    }
+    .header-inner {
+        padding: 5px 0;
+    }
+}

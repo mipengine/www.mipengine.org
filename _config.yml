@@ -1,0 +1,25 @@
+title: 移动网页加速器_MIP(Mobile Instant Pages)
+description: MIP（Mobile Instant Pages - 移动网页加速器）是一套应用于移动网页的开放性技术标准，使用 MIP无需等待加载，页面内容将以更友好的方式瞬时到达用户。
+keywords: MIP,AMP,百度MIP,Mobile Instant Pages,移动页面加速,H5页面加速,SEO,移动页面
+language: zh-cn
+timezone: Asia/Shanghai
+
+url: https://www.mipengine.org
+root: /
+post_asset_folder: true
+per_page: 0
+
+theme: mip
+
+highlight:
+  enable: false
+
+public_dir: dist
+
+html_minifier:
+  exclude:
+  removeComments: true
+  collapseWhitespace: true
+  removeScriptTypeAttributes: true
+  removeStyleLinkTypeAttributes: true
+  minifyJS: true

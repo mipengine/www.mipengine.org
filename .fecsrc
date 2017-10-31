@@ -1,0 +1,8 @@
+{
+    "eslint": {
+        "env": {
+            "es6": false,
+            "node": true
+        }
+    }
+}

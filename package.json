@@ -1,0 +1,80 @@
+{
+  "name": "www.mipengine.org",
+  "description": "基于 Hexo 的 MIP 官网站点。",
+  "version": "0.0.1",
+  "hexo": {
+    "version": "3.4.0"
+  },
+  "scripts": {
+    "lint": "fecs check scripts/ test/ tools/ --rule",
+    "start": "npm run server",
+    "server": "hexo server",
+    "sync-components": "node tools/sync-components.js",
+    "validator": "mocha --reporter spec --timeout 5000 --recursive test/spec/",
+    "validator:watch": "npm run validator -- --watch",
+    "build": "hexo clean && hexo generate",
+    "prevalidator": "[ -d dist ] || npm run build",
+    "postinstall": "npm run sync-components",
+    "commitmsg": "validate-commit-msg",
+    "predeploy": "[ -d dist ] || npm run build",
+    "deploy": "bash tools/deploy.sh"
+  },
+  "config": {
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "test",
+        "chore",
+        "revert",
+        "release"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chalk": "^2.1.0",
+    "fecs": "1.4.x",
+    "glob": "^7.1.2",
+    "got": "^7.1.0",
+    "hexo": "^3.2.0",
+    "hexo-generator-mip": "^0.4.2",
+    "hexo-server": "^0.2.0",
+    "highlight.js": "^9.12.0",
+    "husky": "^0.14.3",
+    "marked": "^0.3.6",
+    "mip-validator": "^1.5.6",
+    "mkdirp": "^0.5.1",
+    "mocha": "^4.0.1",
+    "rimraf": "^2.6.2",
+    "unzip": "^0.1.11",
+    "validate-commit-msg": "^2.14.0",
+    "yamljs": "^0.3.0",
+    "hexo-html-minifier": "^0.0.2"
+  },
+  "keywords": [
+    "MIP"
+  ],
+  "author": "mipengine <mip-support@baidu.com>",
+  "contributors": [
+    {
+      "name": "xuexb",
+      "email": "fe.xiaowu@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mipengine/www.mipengine.org.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mipengine/www.mipengine.org/issues"
+  },
+  "homepage": "https://github.com/mipengine/www.mipengine.org#readme"
+}

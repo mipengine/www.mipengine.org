@@ -1,0 +1,62 @@
+/**
+ * 移动端导航
+ */
+
+#right-sidebar {
+    padding: 0 15px;
+    background-color: #fff;
+}
+#right-sidebar ul {
+    list-style: none;
+}
+
+.mobile-nav-list {
+    padding: 40px 0 15px;
+    line-height: 2.4;
+}
+.mobile-nav-list a{
+    display: block;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*文档目录*/
+.right-sidebar-doc {
+    line-height: 2.2;
+    padding-bottom: 30px;
+}
+.right-sidebar-doc h3 {
+    padding: 10px 0 0;
+    position: relative;
+    display: block;
+    font-weight: 700;
+    font-size: 15px;
+    color: #333;
+}
+.right-sidebar-doc a {
+    color: #666;
+    display: block;
+    font-size: 14px;
+    position: relative;
+}
+.right-sidebar-doc a.current {
+    color: #009aed;
+}
+.right-sidebar-doc a.current:before {
+    content: '';
+    width: 5px;
+    height: 1px;
+    top: 1px;
+    display: inline-block;
+    border: 6px solid transparent;
+    border-left: 8px solid #009aed;
+    border-right: 0;
+    border-radius: 1px;
+    position: relative;
+}
+
+/*隐藏更多链接*/
+.mobile-nav-list > li > span {
+    display: none;
+}

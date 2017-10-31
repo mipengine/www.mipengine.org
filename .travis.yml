@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - '4'
+
+jobs:
+  include:
+    - stage: validator
+      script: npm run validator
+    - stage: deploy
+      if: tag =~ ^v
+      script: npm run deploy
