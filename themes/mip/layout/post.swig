@@ -16,9 +16,6 @@
           <div class="post-article-content markdown-body">
             {{ page.content }}
           </div>
-          <footer class="article-footer">
-            <time datetime="{{ date_xml(page.updated) }}">最后更新于 {{ date(page.updated) }}</time>
-          </footer>
       </article>
     </div>
 {% endblock content %}

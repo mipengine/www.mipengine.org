@@ -21,9 +21,6 @@
               <div class="doc-article-content markdown-body">
                 {{ page.content }}
               </div>
-              <footer class="article-footer">
-                <time datetime="{{ date_xml(page.updated) }}">最后更新于 {{ date(page.updated) }}</time>
-              </footer>
           </article>
           <aside class="doc-left-sidebar">
               <div class="doc-left-sidebar-inner">
