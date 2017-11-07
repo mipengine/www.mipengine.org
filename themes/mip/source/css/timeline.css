@@ -93,4 +93,8 @@
         margin-top: 0;
         padding: 0 20px;
     }
+    .timeline-left-sidebar-inner .filter-list {
+        height: 0;
+        overflow: hidden;
+    }
 }

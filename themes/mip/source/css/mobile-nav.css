@@ -11,8 +11,8 @@
 }
 
 .mobile-nav-list {
-    padding: 40px 0 15px;
-    line-height: 2.4;
+    padding: 45px 0 15px;
+    line-height: 2.3;
 }
 .mobile-nav-list a{
     display: block;
@@ -24,7 +24,7 @@
 /*文档目录*/
 .right-sidebar-doc {
     line-height: 2.2;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 .right-sidebar-doc h3 {
     padding: 10px 0 0;
