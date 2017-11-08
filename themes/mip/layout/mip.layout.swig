@@ -22,7 +22,7 @@
     <meta name="baidu-site-verification" content="P4Uj0PXQrc" />
     {{ mipcanonical(page) }}
     <link rel="stylesheet" href="https://mipcache.bdstatic.com/static/v1/mip.css">
-    <link rel=icon href="/favicon.ico">
+    <link rel=icon href="https://www.mipengine.org/favicon.ico">
     {% block style %}
     {% endblock style %}
     <noscript>
