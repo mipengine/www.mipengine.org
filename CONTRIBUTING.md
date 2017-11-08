@@ -9,8 +9,9 @@
     - [项目结构](#dir-spec)
     - [提交请求（pull request）](#pull-request)
 - [提交信息规范](#commit-message-spec)
-- [文档准则](#docs-spec)
+- [文档说明](#docs-spec)
     - [文档提醒语法](#docs-tips)
+    - [新增文档](#new-docs)
 
 <a id="issue"></a>
 ## 问题反馈
@@ -97,7 +98,7 @@ $ npm run lint
 git commit 信息和 pull request 标题必须遵循 MIP 项目的 [提交信息规范](https://github.com/mipengine/spec/blob/master/docs/commit-message-spec.md) ，否则不予合入。
 
 <a id="docs-spec"></a>
-## 文档准则
+## 文档说明
 
 - 文档基于 Markdown 格式编写。
 - 文档编辑地址可通过访问文档右上角编辑按钮获得。
@@ -105,7 +106,7 @@ git commit 信息和 pull request 标题必须遵循 MIP 项目的 [提交信息
 - 使用中文半角标点符号。
 
 <a id="docs-tips"></a>
-#### 文档提醒语法
+### 文档提醒语法
 
 在段落前插入 `特殊标记` 用于重点强调信息，如：
 
@@ -120,3 +121,34 @@ git commit 信息和 pull request 标题必须遵循 MIP 项目的 [提交信息
 显示的样式如下：
 
 ![image](https://user-images.githubusercontent.com/3872051/32155586-25267f66-bd73-11e7-8c3e-dc862e4aa530.png)
+
+<a id="new-docs"></a>
+### 新增文档
+
+#### 文档目录
+
+在 `source/` 对应目录下新增 `.md` 文件，如：
+
+- `source/demos.md` 对应链接路径 `/demos.html`
+- `source/test/index.md` 对应链接路径 `/test`
+- `source/test/ok.md` 对应链接路径 `/test/ok.html`
+- `source/doc/mip-cdn.md` 对应链接路径 `/doc/mip-cdn.html`
+
+#### 文档配置
+
+```markdown
+title: MIP
+layout: post
+keywords: 关键词
+description: 描述
+---
+
+我是内容
+```
+
+注意：
+
+- `title` - 配置页面标题内容。
+- `layout: post` - 配置继承 `themes/mip/layout/post.swig` 模板，为文章类型，也可以继承 `doc` 模板。
+- `keywords` - 配置页面关键词信息，默认为 `_config.yml` 配置内容，如果为 false 表示不输出。
+- `description` - 配置页面描述信息，默认为 `_config.yml` 配置内容，如果为 false 表示不输出。
