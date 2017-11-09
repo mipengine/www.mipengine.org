@@ -5,7 +5,9 @@ node_js:
 jobs:
   include:
     - stage: validator
-      script: npm run validator
+      script:
+        - npm run lint
+        - npm run validator
     - stage: deploy
       if: tag =~ ^v
       script: npm run deploy
