@@ -21,13 +21,13 @@ hexo.extend.helper.register('raw_link', path => {
 
         // 处理广告，因为广告是多个 markdown 在一个组件内
         if (path === 'examples/mip-ad/mip-ad.md') {
-            return 'https://github.com/mipengine/mip-extensions/edit/master/mip-ad/README.md';
+            return 'https://github.com/mipengine/mip-extensions/edit/master/src/mip-ad/README.md';
         }
         else if (path.replace('examples/', '').indexOf('mip-ad/') === 0) {
-            return `https://github.com/mipengine/mip-extensions/edit/master/${path.replace('examples/', '')}`;
+            return `https://github.com/mipengine/mip-extensions/edit/master/src/${path.replace('examples/', '')}`;
         }
 
-        return `https://github.com/mipengine/mip-extensions/edit/master/${name}/README.md`;
+        return `https://github.com/mipengine/mip-extensions/edit/master/src/${name}/README.md`;
     }
 
     return `https://github.com/mipengine/www.mipengine.org/edit/master/source/${path}`;

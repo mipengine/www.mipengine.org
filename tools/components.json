@@ -27,177 +27,177 @@
 }, {
   "name": "mip-accordion",
   "type": "extensions",
-  "readme": "mip-accordion/README.md",
+  "readme": "src/mip-accordion/README.md",
   "output": "examples/mip-extensions/mip-accordion.md"
 }, {
   "name": "mip-analytics",
   "type": "extensions",
-  "readme": "mip-analytics/README.md",
+  "readme": "src/mip-analytics/README.md",
   "output": "examples/mip-extensions/mip-analytics.md",
   "preview": false
 }, {
   "name": "mip-anim",
   "type": "extensions",
-  "readme": "mip-anim/README.md",
+  "readme": "src/mip-anim/README.md",
   "output": "examples/mip-extensions/mip-anim.md"
 }, {
   "name": "mip-app-banner",
   "type": "extensions",
-  "readme": "mip-app-banner/README.md",
+  "readme": "src/mip-app-banner/README.md",
   "output": "examples/mip-extensions/mip-app-banner.md",
   "preview": false
 }, {
   "name": "mip-appdl",
   "type": "extensions",
-  "readme": "mip-appdl/README.md",
+  "readme": "src/mip-appdl/README.md",
   "output": "examples/mip-extensions/mip-appdl.md",
   "preview": false
 }, {
   "name": "mip-audio",
   "type": "extensions",
-  "readme": "mip-audio/README.md",
+  "readme": "src/mip-audio/README.md",
   "output": "examples/mip-extensions/mip-audio.md"
 }, {
   "name": "mip-experiment",
   "type": "extensions",
-  "readme": "mip-experiment/README.md",
+  "readme": "src/mip-experiment/README.md",
   "output": "examples/mip-extensions/mip-experiment.md"
 }, {
   "name": "mip-filter",
   "type": "extensions",
-  "readme": "mip-filter/README.md",
+  "readme": "src/mip-filter/README.md",
   "output": "examples/mip-extensions/mip-filter.md"
 }, {
   "name": "mip-fixed",
   "type": "extensions",
-  "readme": "mip-fixed/README.md",
+  "readme": "src/mip-fixed/README.md",
   "output": "examples/mip-extensions/mip-fixed.md"
 }, {
   "name": "mip-form",
   "type": "extensions",
-  "readme": "mip-form/README.md",
+  "readme": "src/mip-form/README.md",
   "output": "examples/mip-extensions/mip-form.md"
 }, {
   "name": "mip-gototop",
   "type": "extensions",
-  "readme": "mip-gototop/README.md",
+  "readme": "src/mip-gototop/README.md",
   "output": "examples/mip-extensions/mip-gototop.md"
 }, {
   "name": "mip-history",
   "type": "extensions",
-  "readme": "mip-history/README.md",
+  "readme": "src/mip-history/README.md",
   "output": "examples/mip-extensions/mip-history.md"
 }, {
   "name": "mip-html-os",
   "type": "extensions",
-  "readme": "mip-html-os/README.md",
+  "readme": "src/mip-html-os/README.md",
   "output": "examples/mip-extensions/mip-html-os.md",
   "preview": false
 }, {
   "name": "mip-infinitescroll",
   "type": "extensions",
-  "readme": "mip-infinitescroll/README.md",
+  "readme": "src/mip-infinitescroll/README.md",
   "output": "examples/mip-extensions/mip-infinitescroll.md",
   "preview": false
 }, {
   "name": "mip-lightbox",
   "type": "extensions",
-  "readme": "mip-lightbox/README.md",
+  "readme": "src/mip-lightbox/README.md",
   "output": "examples/mip-extensions/mip-lightbox.md"
 }, {
   "name": "mip-link",
   "type": "extensions",
-  "readme": "mip-link/README.md",
+  "readme": "src/mip-link/README.md",
   "output": "examples/mip-extensions/mip-link.md"
 }, {
   "name": "mip-list",
   "type": "extensions",
-  "readme": "mip-list/README.md",
+  "readme": "src/mip-list/README.md",
   "output": "examples/mip-extensions/mip-list.md",
   "preview": false
 }, {
   "name": "mip-nav-slidedown",
   "type": "extensions",
-  "readme": "mip-nav-slidedown/README.md",
+  "readme": "src/mip-nav-slidedown/README.md",
   "output": "examples/mip-extensions/mip-nav-slidedown.md"
 }, {
   "name": "mip-semi-fixed",
   "type": "extensions",
-  "readme": "mip-semi-fixed/README.md",
+  "readme": "src/mip-semi-fixed/README.md",
   "output": "examples/mip-extensions/mip-semi-fixed.md"
 }, {
   "name": "mip-share",
   "type": "extensions",
-  "readme": "mip-share/README.md",
+  "readme": "src/mip-share/README.md",
   "output": "examples/mip-extensions/mip-share.md"
 }, {
   "name": "mip-showmore",
   "type": "extensions",
-  "readme": "mip-showmore/README.md",
+  "readme": "src/mip-showmore/README.md",
   "output": "examples/mip-extensions/mip-showmore.md"
 }, {
   "name": "mip-sidebar",
   "type": "extensions",
-  "readme": "mip-sidebar/README.md",
+  "readme": "src/mip-sidebar/README.md",
   "output": "examples/mip-extensions/mip-sidebar.md"
 }, {
   "name": "mip-stats-baidu",
   "type": "extensions",
-  "readme": "mip-stats-baidu/README.md",
+  "readme": "src/mip-stats-baidu/README.md",
   "output": "examples/mip-extensions/mip-stats-baidu.md",
   "preview": false
 }, {
   "name": "mip-stats-tianrun",
   "type": "extensions",
-  "readme": "mip-stats-tianrun/README.md",
+  "readme": "src/mip-stats-tianrun/README.md",
   "output": "examples/mip-extensions/mip-stats-tianrun.md",
   "preview": false
 }, {
   "name": "mip-vd-tabs",
   "type": "extensions",
-  "readme": "mip-vd-tabs/README.md",
+  "readme": "src/mip-vd-tabs/README.md",
   "output": "examples/mip-extensions/mip-vd-tabs.md"
 }, {
   "name": "mip-ad",
   "type": "extensions",
-  "readme": "mip-ad/README.md",
+  "readme": "src/mip-ad/README.md",
   "output": "examples/mip-ad/mip-ad.md"
 }, {
   "name": "mip-ad",
   "type": "extensions",
-  "readme": "mip-ad/mip-ad-comm.md",
+  "readme": "src/mip-ad/mip-ad-comm.md",
   "output": "examples/mip-ad/mip-ad-comm.md"
 }, {
   "name": "mip-ad",
   "type": "extensions",
-  "readme": "mip-ad/mip-ad-baidu.md",
+  "readme": "src/mip-ad/mip-ad-baidu.md",
   "output": "examples/mip-ad/mip-ad-baidu.md"
 }, {
   "name": "mip-ad",
   "type": "extensions",
-  "readme": "mip-ad/mip-ad-baidussp.md",
+  "readme": "src/mip-ad/mip-ad-baidussp.md",
   "output": "examples/mip-ad/mip-ad-baidussp.md",
   "preview": false
 }, {
   "name": "mip-ad",
   "type": "extensions",
-  "readme": "mip-ad/mip-ad-imageplus.md",
+  "readme": "src/mip-ad/mip-ad-imageplus.md",
   "output": "examples/mip-ad/mip-ad-imageplus.md",
   "preview": false
 }, {
   "name": "mip-ad",
   "type": "extensions",
-  "readme": "mip-ad/mip-ad-qwang.md",
+  "readme": "src/mip-ad/mip-ad-qwang.md",
   "output": "examples/mip-ad/mip-ad-qwang.md",
   "preview": false
 }, {
   "name": "mip-ad",
   "type": "extensions",
-  "readme": "mip-ad/mip-ad-ssp.md",
+  "readme": "src/mip-ad/mip-ad-ssp.md",
   "output": "examples/mip-ad/mip-ad-ssp.md"
 }, {
   "name": "mip-ad",
   "type": "extensions",
-  "readme": "mip-ad/mip-baidu-wm-ext.md",
+  "readme": "src/mip-ad/mip-baidu-wm-ext.md",
   "output": "examples/mip-ad/mip-baidu-wm-ext.md"
 }]

@@ -98,7 +98,7 @@
     "changelog": [],
     "link": {
         "文档": "/examples/mip-extensions/mip-history.html",
-    "github" : "https://github.com/mipengine/mip-extensions/tree/master/mip-history"
+    "github" : "https://github.com/mipengine/mip-extensions/tree/master/src/mip-history"
     }
 },{
     "time": "2017-03-10",
@@ -392,7 +392,7 @@
     "changelog": ["支持响应式，移动端筛选项展开收起"],
     "link": {
         "文档": "/examples/mip-extensions/mip-filter.html",
-        "github": "https://github.com/mipengine/mip-extensions/tree/master/mip-filter"
+        "github": "https://github.com/mipengine/mip-extensions/tree/master/src/mip-filter"
     }
 },{
     "time": "2016-11-16",
@@ -402,7 +402,7 @@
     "changelog": ["支持响应式，移动端全屏展开交互"],
     "link": {
         "文档": "/examples/mip-extensions/mip-nav-slidedown.html",
-        "github": "https://github.com/mipengine/mip-extensions/tree/master/mip-nav-slidedown"
+        "github": "https://github.com/mipengine/mip-extensions/tree/master/src/mip-nav-slidedown"
     }
 },{
     "time": "2016-11-14",
