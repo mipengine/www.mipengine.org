@@ -14,6 +14,7 @@
     "validator:watch": "npm run validator -- --watch",
     "build": "hexo clean && hexo generate",
     "prevalidator": "[ -d dist ] || npm run build",
+    "preinstall": "node tools/check-node-version.js",
     "postinstall": "npm run sync-components",
     "commitmsg": "validate-commit-msg",
     "predeploy": "[ -d dist ] || npm run build",

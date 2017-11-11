@@ -3,6 +3,9 @@
         "env": {
             "es6": false,
             "node": true
+        },
+        "rules": {
+            "no-console": 0
         }
     }
 }
