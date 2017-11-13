@@ -44,7 +44,8 @@ layout: doc
 [mip-sidebar](/examples/mip-extensions/mip-sidebar.html) |侧边栏|侧边栏组件，点击按钮，侧边栏滑入屏幕。
 [mip-stats-baidu](/examples/mip-extensions/mip-stats-baidu.html) |百度统计|添加百度统计组件，用于统计页面数据。
 [mip-stats-tianrun](/examples/mip-extensions/mip-stats-tianrun.html) |天润统计|添加天润统计。
-[mip-vd-tabs](/examples/mip-extensions/mip-vd-tabs.html) |tab 切换组件|在网页中显示标签。标签页内元素较多时不建议使用,会影响页面性能.
+[mip-vd-tabs](/examples/mip-extensions/mip-vd-tabs.html) |tab 切换组件|在网页中显示标签。标签页内元素较多时不建议使用,会影响页面性能。
+[mip-bind](/examples/mip-extensions/mip-bind.html) |数据驱动组件|在页面中以数据作为驱动源，做到随着数据变动页面界面也会随之变动的功能。
 
 ## 3. 广告组件
 

@@ -200,4 +200,10 @@
   "type": "extensions",
   "readme": "src/mip-ad/mip-baidu-wm-ext.md",
   "output": "examples/mip-ad/mip-baidu-wm-ext.md"
+}, {
+  "name": "mip-bind",
+  "type": "extensions",
+  "readme": "src/mip-bind/README.md",
+  "output": "examples/mip-extensions/mip-bind.md",
+  "preview": false
 }]
