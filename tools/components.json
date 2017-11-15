@@ -204,6 +204,5 @@
   "name": "mip-bind",
   "type": "extensions",
   "readme": "src/mip-bind/README.md",
-  "output": "examples/mip-extensions/mip-bind.md",
-  "preview": false
+  "output": "examples/mip-extensions/mip-bind.md"
 }]
