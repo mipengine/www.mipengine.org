@@ -3,3 +3,6 @@ mip:
   cssmin: true
   exclude:
     - '/mippath.html'
+    - 'https://www.mipengine.org/validator/preview'
+    - 'https://www.mipengine.org/validator/validate'
+    - 'https://www.mipengine.org/platform'
