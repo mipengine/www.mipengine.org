@@ -49,14 +49,18 @@
     margin: 0;
     padding: 0;
 }
+.examples-doc-item {
+    padding-left: 1em;
+}
 .examples-doc-level-1,
 .examples-doc-level-2 {
     font-size: 16px;
+    padding-left: 0;
 }
 .examples-doc-level-3 {
     font-size: 14px;
-    padding-left: 15px;
 }
+
 @media screen and (min-width: 1000px) {
     .examples-left-sidebar {
         display: block;
