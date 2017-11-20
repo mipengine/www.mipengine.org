@@ -1,3 +1,5 @@
 mip:
   enable: true
   cssmin: true
+  exclude:
+    - '/mippath.html'
