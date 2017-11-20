@@ -98,8 +98,7 @@ const extensionsProcessor = () => {
                 const outputFilePath = path.resolve(BASE_URL, 'source', val.output);
 
                 if (!util.fileExists(markdownFile)) {
-                    reporter.error(`${markdownFile} 不存在`);
-                    return resolve();
+                    return reject(`${markdownFile} 不存在`);
                 }
 
                 const data = util.parseMarkdown(fs.readFileSync(markdownFile).toString());
@@ -173,4 +172,6 @@ Promise.all(sync).then(clean).then(() => {
     reporter.info('\n同步成功!\n');
 }).catch(err => {
     reporter.error(err);
+    clean();
+    process.exit(1);
 });
