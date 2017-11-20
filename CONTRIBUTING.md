@@ -1,6 +1,6 @@
 # MIP 官网贡献指南
 
-非常感谢您关注 [mipengine](#mipengine)/[www.mipengine.org](https://github.com/mipengine/www.mipengine.org) 项目，在提交您的贡献之前，请务必认真阅读以下准则。
+非常感谢您关注 [mipengine](https://github.com/mipengine)/[www.mipengine.org](https://github.com/mipengine/www.mipengine.org) 项目，在提交您的贡献之前，请务必认真阅读以下准则。
 
 - [问题反馈](#issue)
 - [开发指南](#develop)
@@ -30,7 +30,7 @@
 
 ``` bash
 # 启动本地 http 服务器用来本地预览
-$ npm run server
+$ npm run dev
 
 # 编译 markdown 文档为 html 文件
 $ npm run build
@@ -86,7 +86,7 @@ $ npm run lint
 
 1. fork [mipengine/www.mipengine.org](https://github.com/mipengine/www.mipengine.org)
 1. 把个人仓库（repository）克隆到电脑上，并安装所依赖的插件。
-1. 开始编辑文件，可以通过命令 `npm run server` 预览编辑的效果，编辑完成后，需要检查：
+1. 开始编辑文件，可以通过命令 `npm run dev` 预览编辑的效果，编辑完成后，需要检查：
     1. 运行 `npm run validator` 确保 MIP 规范验证通过。
     2. 运行 `npm run lint` 确保代码风格验证通过。
 1. 推送（push）分支。

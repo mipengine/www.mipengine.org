@@ -16,7 +16,7 @@ npm install
 本地预览:
 
 ``` bash
-npm run server
+npm run dev
 ```
 
 ## 相关链接

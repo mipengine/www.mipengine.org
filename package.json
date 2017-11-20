@@ -7,8 +7,7 @@
   },
   "scripts": {
     "lint": "fecs check scripts/ test/ tools/ --rule",
-    "start": "npm run server",
-    "server": "hexo server",
+    "dev": "hexo server",
     "sync-components": "node tools/sync-components.js",
     "validator": "mocha --reporter spec --timeout 5000 --recursive test/spec/",
     "validator:watch": "npm run validator -- --watch",
