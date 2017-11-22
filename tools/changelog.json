@@ -1,4 +1,13 @@
 [{
+    "time": "2017-11-16",
+    "type": "widget mip-lightbox",
+    "title": "mip-lightbox弹层组件升级，支持弹出内容区域滚动。",
+    "version": "1",
+    "changelog": [],
+    "link": {
+        "文档": "/examples/mip-extensions/mip-lightbox.html"
+    }
+},{
     "time": "2017-9-26",
     "type": "widget mip-video",
     "title": "mip-video视频组件升级",
