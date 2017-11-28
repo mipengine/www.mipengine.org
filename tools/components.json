@@ -205,4 +205,9 @@
   "type": "extensions",
   "readme": "src/mip-bind/README.md",
   "output": "examples/mip-extensions/mip-bind.md"
+}, {
+  "name": "mip-map",
+  "type": "extensions",
+  "readme": "src/mip-map/README.md",
+  "output": "examples/mip-extensions/mip-map.md"
 }]

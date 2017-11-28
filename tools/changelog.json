@@ -1,4 +1,22 @@
 [{
+    "time": "2017-11-28",
+    "type": "widget mip-map",
+    "title": "新增 mip-map 地图组件，支持位置定位、地图控件加载、marker 定位点弹窗信息定制等功能",
+    "version": "1",
+    "changelog": [],
+    "link": {
+        "文档": "/examples/mip-extensions/mip-map.html"
+    }
+},{
+    "time": "2017-11-28",
+    "type": "widget mip-stats-cnzz",
+    "title": "mip-stats-cnzz 支持站长自定义节点参数",
+    "version": "1",
+    "changelog": [],
+    "link": {
+        "文档": "https://github.com/mipengine/mip-extensions/blob/master/src/mip-stats-cnzz/README.md"
+    }
+},{
     "time": "2017-11-16",
     "type": "widget mip-lightbox",
     "title": "mip-lightbox弹层组件升级，支持弹出内容区域滚动。",

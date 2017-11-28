@@ -46,6 +46,7 @@ layout: doc
 [mip-stats-tianrun](/examples/mip-extensions/mip-stats-tianrun.html) |天润统计|添加天润统计。
 [mip-vd-tabs](/examples/mip-extensions/mip-vd-tabs.html) |tab 切换组件|在网页中显示标签。标签页内元素较多时不建议使用,会影响页面性能。
 [mip-bind](/examples/mip-extensions/mip-bind.html) |数据驱动组件|在页面中以数据作为驱动源，做到随着数据变动页面界面也会随之变动的功能。
+[mip-map](/examples/mip-extensions/mip-map.html) |百度地图组件|组件集成了百度地图的服务，目前支持具体位置定位、地图控件加载、marker 定位点弹窗信息定制等功能。
 
 ## 3. 广告组件
 
