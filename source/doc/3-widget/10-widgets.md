@@ -47,6 +47,8 @@ layout: doc
 [mip-vd-tabs](/examples/mip-extensions/mip-vd-tabs.html) |tab 切换组件|在网页中显示标签。标签页内元素较多时不建议使用,会影响页面性能。
 [mip-bind](/examples/mip-extensions/mip-bind.html) |数据驱动组件|在页面中以数据作为驱动源，做到随着数据变动页面界面也会随之变动的功能。
 [mip-map](/examples/mip-extensions/mip-map.html) |百度地图组件|组件集成了百度地图的服务，目前支持具体位置定位、地图控件加载、marker 定位点弹窗信息定制等功能。
+[mip-access](/examples/mip-extensions/mip-access.html) |页面内容访问权限定制组件|mip-access 能够允许发布者对页面内容进行访问权限的控制，通过内容标记和用户访问情况进行综合评价，从而决定页面要展示的内容。
+[mip-install-serviceworker](/examples/mip-extensions/mip-install-serviceworker.html) |离线可用组件|service worker 组件可以根据不同策略进行不同资源缓存，使其能够在离线情况下可访问。
 
 ## 3. 广告组件
 

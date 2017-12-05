@@ -210,4 +210,14 @@
   "type": "extensions",
   "readme": "src/mip-map/README.md",
   "output": "examples/mip-extensions/mip-map.md"
+}, {
+  "name": "mip-access",
+  "type": "extensions",
+  "readme": "src/mip-access/README.md",
+  "output": "examples/mip-extensions/mip-access.md"
+}, {
+  "name": "mip-install-serviceworker",
+  "type": "extensions",
+  "readme": "src/mip-install-serviceworker/README.md",
+  "output": "examples/mip-extensions/mip-install-serviceworker.md"
 }]
