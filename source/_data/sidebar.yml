@@ -22,6 +22,7 @@ doc:
     template 模板: /doc/3-widget/6-help/5-template.html
     存储: /doc/3-widget/6-help/6-storage.html
   帮助中心:
-    MIP FAQ: /doc/4-support/1-q-and-a.html
+    MIP FAQ: 'https://github.com/mipengine/mip/wiki/MIP-%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%A4%A7%E5%85%A8'
+    浏览器兼容列表: /doc/4-support/support-browsers.html
     联系我们: /doc/4-support/2-contact.html
     贡献文档: https://github.com/mipengine/www.mipengine.org/blob/master/CONTRIBUTING.md

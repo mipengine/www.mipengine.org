@@ -1,7 +1,7 @@
 首页: /
 使用文档: /doc/00-mip-101.html
 组件列表: /doc/3-widget/10-widgets.html
-帮助: /doc/4-support/1-q-and-a.html
+帮助: 'https://github.com/mipengine/mip/wiki/MIP-%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%A4%A7%E5%85%A8'
 常用链接:
   MIP 官方博客: http://www.cnblogs.com/mipengine
   MIP 升级动态: /timeline.html
