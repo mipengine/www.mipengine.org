@@ -69,3 +69,4 @@ typings/
 /tools/mip-master
 /tools/mip-extensions-master
 package-lock.json
+/_config.dev.yml

@@ -3,20 +3,20 @@
   "description": "基于 Hexo 的 MIP 官网站点。",
   "version": "0.0.12",
   "hexo": {
-    "version": "3.4.2"
+    "version": "3.4.3"
   },
   "scripts": {
     "lint": "fecs check scripts/ test/ tools/ --rule",
-    "dev": "hexo server",
+    "dev": "node tools/copy-dev.js && hexo server --config _config.dev.yml",
     "sync-components": "node tools/sync-components.js",
     "validator": "mocha --reporter spec --timeout 5000 --recursive test/spec/",
     "validator:watch": "npm run validator -- --watch",
     "build": "hexo clean && hexo generate",
-    "prevalidator": "[ -d dist ] || npm run build",
+    "prevalidator": "npm run build",
     "preinstall": "node tools/check-node-version.js",
     "postinstall": "npm run sync-components",
     "commitmsg": "validate-commit-msg",
-    "predeploy": "[ -d dist ] || npm run build",
+    "predeploy": "npm run build",
     "deploy": "bash tools/deploy.sh"
   },
   "config": {
