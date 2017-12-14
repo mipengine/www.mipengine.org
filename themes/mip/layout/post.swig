@@ -10,7 +10,7 @@
           <header class="article-header">
             <h1 class="article-title">{{ page.title }}</h1>
             <a href="{{ raw_link(page.source) }}" class="article-edit-link" title="点击编辑该页面">
-                <i class="fa fa-pencil"></i>
+                <i class="fa fa-pencil"></i>编辑
             </a>
           </header>
           <div class="post-article-content markdown-body">

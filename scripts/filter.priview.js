@@ -20,7 +20,12 @@ hexo.extend.filter.register('after_post_render', data => {
     }
 
     data.content = data.content.replace(/<pre><code class="hljs lang-html">([\s\S]+?)<\/code><\/pre>/g, match => {
-        return `<mip-mipengine-preview-v2 class="mip-preview-btn">预览</mip-mipengine-preview-v2>${match}`;
+        return [
+            '<mip-mipengine-preview-v2 class="mip-preview-btn">',
+                '<i class="fa fa-eye"></i>预览',
+            '</mip-mipengine-preview-v2>',
+            match
+        ].join('');
     });
 
     return data;

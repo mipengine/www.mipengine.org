@@ -92,10 +92,11 @@
     margin-top: -10px;
     padding-left: 26px;
     line-height: 25px;
-    opacity: .6;
-    background: url(/static/img/mip-extension-preview.svg) no-repeat;
-    background-size: 20px 25px;
     cursor: pointer;
+    color: #228ae6;
+}
+.mip-preview-btn .fa {
+    margin-right: 6px;
 }
 
 #example-lightbox {

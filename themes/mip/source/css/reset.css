@@ -59,18 +59,27 @@ body {
     line-height: 1.5;
     font-weight: 400;
     border-bottom: 1px solid  #ccc;
-    padding: 0 25px 10px 0;
+    padding: 0 35px 10px 0;
 }
 .article-edit-link {
     position: absolute;
     right: 0;
     top: 0;
-    font-size: 24px;
-    line-height: 36px;
-    color: #bbb;
+    height: 56px;
+    line-height: 56px;
+    color: #228ae6;
 }
-.article-edit-link:hover {
-    color: #009aed;
+.article-edit-link .fa {
+    margin-right: 6px;
+}
+@media screen and (max-width: 767px) {
+    .article-header h1 {
+        font-size: 24px;
+    }
+    .article-edit-link {
+        height: 46px;
+        line-height: 46px;
+    }
 }
 
 /*文章页脚*/
