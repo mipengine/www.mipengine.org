@@ -345,7 +345,7 @@
     "changelog": [],
     "link": {
         "文档": "/examples/mip-ad/mip-ad-ssp.html",
-        "引用地址": "https://mipcache.bdstatic.com/static/v1/mip-ad/mip-ad.js"
+        "引用地址": "https://c.mipcdn.com/static/v1/mip-ad/mip-ad.js"
     }
 },{
     "time": "2016-12-01",
@@ -438,7 +438,7 @@
     "version": "1",
     "changelog": ["解决 mipmain.js 升级需要修改版本号的问题", "未来 mipmain.js 仍然可用，但会停止维护"],
     "link": {
-        "引用地址": "https://mipcache.bdstatic.com/static/v1/mip.js"
+        "引用地址": "https://c.mipcdn.com/static/v1/mip.js"
     }
 },{
     "time": "2016-11-14",
@@ -447,7 +447,7 @@
     "version": "1",
     "changelog": ["解决 mipmain.css 升级需要修改版本号的问题", "未来 mipmain.css 仍然可用，但会停止维护"],
     "link": {
-        "引用地址": "https://mipcache.bdstatic.com/static/v1/mip.css"
+        "引用地址": "https://c.mipcdn.com/static/v1/mip.css"
     }
 },{
     "time": "2016-11-14",
@@ -456,7 +456,7 @@
     "version": "1",
     "changelog": ["解决组件升级需要修改版本号的问题", "未来旧有组件仍然可用，但会停止维护，请以现有官网文档版本为准"],
     "link": {
-        "示例引用地址": "https://mipcache.bdstatic.com/static/v1/mip-share/mip-share.js",
+        "示例引用地址": "https://c.mipcdn.com/static/v1/mip-share/mip-share.js",
         "使用demo" : "/doc/01-mip-demo.html"
     }
 },{
@@ -520,7 +520,7 @@
     "version": "1.1.2",
     "changelog": ["内置视频组件升级"],
     "link": {
-        "引用地址": "https://mipcache.bdstatic.com/static/mipmain-v1.1.2.js",
+        "引用地址": "https://c.mipcdn.com/static/mipmain-v1.1.2.js",
         "视频组件": "/examples/mip/mip-video.html"
     }
 },{

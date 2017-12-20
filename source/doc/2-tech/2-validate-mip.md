@@ -27,8 +27,8 @@ MIP校验工具地址：https://www.mipengine.org/validator/validate
 |&lt;head&gt; |强制小写|
 |&lt;meta charset="utf-8"&gt; |utf-8不区分大小写，无单引号或者双引号限制|
 |&lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt; |强制小写，无单引号或者双引号限制|
-|&lt; link rel="stylesheet" type="text/css" href="https://mipcache.bdstatic.com/static/v1/mip.css" &gt;|强制小写，无单引号或者双引号限制，v1.1.1会根据版本不同而不同|
-|&lt;script src="https://mipcache.bdstatic.com/static/v1/mip.js" &gt;&lt;/script &gt; |强制小写，无单引号或者双引号限制，v1.1.2会根据版本不同而不同|
+|&lt; link rel="stylesheet" type="text/css" href="https://c.mipcdn.com/static/v1/mip.css" &gt;|强制小写，无单引号或者双引号限制，v1.1.1会根据版本不同而不同|
+|&lt;script src="https://c.mipcdn.com/static/v1/mip.js" &gt;&lt;/script &gt; |强制小写，无单引号或者双引号限制，v1.1.2会根据版本不同而不同|
 |&lt;body&gt; |强制小写|
 |&lt;link rel="canonical" href="http(s)://xxx"&gt; |强制小写|
 

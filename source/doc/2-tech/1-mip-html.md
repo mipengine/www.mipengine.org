@@ -14,11 +14,12 @@ layout: doc
 
 - 必须在 head 标签中包含 viewport 设置标签:  &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;，推荐包含`minimum-scale=1`
 
-- 必须在 head 标签中包含 &lt; link rel="stylesheet" type="text/css" href="https://mipcache.bdstatic.com/static/v1/mip.css" &gt;
+- 必须在 head 标签中包含 &lt; link rel="stylesheet" type="text/css" href="https://c.mipcdn.com/static/v1/mip.css" &gt;
 
-- 必须在 body 标签中包含 &lt;script src="https://mipcache.bdstatic.com/static/v1/mip.js" &gt;&lt;/script &gt;
+- 必须在 body 标签中包含 &lt;script src="https://c.mipcdn.com/static/v1/mip.js" &gt;&lt;/script &gt;
 
 - 必须在 head 标签中包含 &lt;link rel="canonical" href="http(s)://xxx" &gt;
+
 
 ## 页面元素使用规范
 

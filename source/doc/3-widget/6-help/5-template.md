@@ -6,7 +6,7 @@ template 模板封装了第三方模板引擎 Mustache.js，可以访问[Mustach
 
 标题|内容
 ----|----
-所需脚本|https://mipcache.bdstatic.com/static/v1/mip-mustache/mip-mustache.js
+所需脚本|https://c.mipcdn.com/static/v1/mip-mustache/mip-mustache.js
 
 ## 示例
 

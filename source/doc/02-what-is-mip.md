@@ -24,7 +24,7 @@ MIP HTML 基于 HTML 中的基础标签制定了全新的规范，通过对一�
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="https://mipcache.bdstatic.com/static/v1/mip.css">
+        <link rel="stylesheet" type="text/css" href="https://c.mipcdn.com/static/v1/mip.css">
         <link rel="canonical" href="https://www.mipengine.org/">
         <!-- noscript 标签是为了在不支持 script 的环境下快速的展现 mip 页面，推荐使用 -->
         <noscript>
@@ -40,7 +40,7 @@ MIP HTML 基于 HTML 中的基础标签制定了全新的规范，通过对一�
     </head>
     <body>
         Hello World!
-        <script src="https://mipcache.bdstatic.com/static/v1/mip.js"></script>
+        <script src="https://c.mipcdn.com/static/v1/mip.js"></script>
     </body>
 </html>
 ```
