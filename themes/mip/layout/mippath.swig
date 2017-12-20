@@ -104,13 +104,13 @@
                 mainUrl: '',
                 isHttps: false
             };
-            var Cache_prefix = 'https://mipcache.bdstatic.com/c/';
+            var Cache_prefix = 'https://c.mipcdn.com/c/';
             var Baidu_prefix = 'https://m.baidu.com/mip/c/';
             var reg;
             var regResult;
 
             if (url.indexOf(Cache_prefix) == 0) {
-                // eg. https://mipcache.bdstatic.com/c/s/m.meishij.net/html5/mip/zuofa/huangmenji_9.html
+                // eg. https://c.mipcdn.com/c/s/m.meishij.net/html5/mip/zuofa/huangmenji_9.html
                 obj.type = 'MIP-Cache Url';
                 reg = new RegExp(Cache_prefix + '(s/)?(\\S+)');
             }

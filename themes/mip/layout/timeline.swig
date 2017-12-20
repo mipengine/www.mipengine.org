@@ -25,5 +25,5 @@
 {% endblock content %}
 
 {% block footer_after %}
-    <script src="https://mipcache.bdstatic.com/static/v1/mip-filter/mip-filter.js"></script>
+    <script src="https://c.mipcdn.com/static/v1/mip-filter/mip-filter.js"></script>
 {% endblock footer_after %}
