@@ -12,13 +12,13 @@ layout: doc
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
         <link rel="stylesheet" type="text/css" href="https://c.mipcdn.com/static/v1/mip.css">
         <!--TODO: canonical href需要替换成原页面url-->
-        <link rel="canonical" href="https://m.baidu.com/demo.html">
+        <link rel="canonical" href="https://www.mipengine.org/test_xxx.html">
         <title>MIP页Demo效果</title>
         <!--TODO: 替换样式-->
         <style mip-custom>
-            body{ margin:10px;}
-            .red-text { color: red;}
-            .middle-text { text-align: center; font-size: 20px}
+            body { margin: 10px;}
+            .red-text { color: #f00;}
+            .middle-text { text-align: center; font-size: 20px;}
             hr { margin: 20px 0;}
             a { border: 1px solid #ddd; padding: 10px; display: block;}
         </style>
@@ -48,18 +48,18 @@ layout: doc
         <hr>
 
         <!--图片组件-->
-        <p class="middle-text">&lt;mip-img&gt; 图片组件</p>
+        <p class="middle-text">mip-img 图片组件</p>
         <mip-img layout="fixed" width="200" height="130" src="https://www.mipengine.org/static/img/mip_logo_3b722d7.png">
         </mip-img>
         <hr>
 
         <!--分享组件，外链mip-share.js-->
-        <p class="middle-text">&lt;mip-share&gt; 分享组件</p>
+        <p class="middle-text">mip-share 分享组件</p>
         <mip-share title="分享：我的第一个MIP页面"></mip-share>
         <hr>
 
         <!--百度统计组件，外链mip-stats-baidu.js TODO: 修改token值-->
-        <p class="middle-text">&lt;mip-stats-baidu&gt; 百度统计组件，代码可见</p>
+        <p class="middle-text">mip-stats-baidu 百度统计组件，代码可见</p>
         <mip-stats-baidu token="4e397f684261b9e4ff9d8"></mip-stats-baidu>
 
         <!--mip 运行环境-->
