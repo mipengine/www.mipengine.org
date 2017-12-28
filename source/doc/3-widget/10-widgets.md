@@ -20,12 +20,14 @@ layout: doc
 
 <span class="minw-125">个性化组件</span>|<span class="minw-60">中文</span>|描述
 ----|----|----
+[mip-access](/examples/mip-extensions/mip-access.html) |页面内容访问权限定制组件|mip-access 能够允许发布者对页面内容进行访问权限的控制，通过内容标记和用户访问情况进行综合评价，从而决定页面要展示的内容。
 [mip-accordion](/examples/mip-extensions/mip-accordion.html) |折叠节点|折叠隐藏节点(可记录用户上次行为)。
 [mip-analytics](/examples/mip-extensions/mip-analytics.html) |统计框架|提供统计发送接口，由使用方决定在什么时候发送什么参数，到什么地方。
 [mip-anim](/examples/mip-extensions/mip-anim.html) |动图|用来支持在 MIP 页中 gif 图的使用。
 [mip-app-banner](/examples/mip-extensions/mip-app-banner.html) |App 调起组件|用于调起 App。
 [mip-appdl](/examples/mip-extensions/mip-appdl.html) |App 下载|App 下载，可区分安卓和 iOS。
 [mip-audio](/examples/mip-extensions/mip-audio.html) |音频播放|提供了一个音频播放组件
+[mip-bind](/examples/mip-extensions/mip-bind.html) |数据驱动组件|在页面中以数据作为驱动源，做到随着数据变动页面界面也会随之变动的功能。
 [mip-experiment](/examples/mip-extensions/mip-experiment.html) |前端抽样实验|mip-experiment 组件用于前端抽样实验。  可用于按钮，banner，广告等前端可控元素的改版实验，与mip-pix，可配合使用。
 [mip-filter](/examples/mip-extensions/mip-filter.html) |筛选组件|筛选组件，自适应pc和wap宽度。mipengine.org有引用
 [mip-fixed](/examples/mip-extensions/mip-fixed.html) |悬浮布局|悬浮元素整体使用方案。
@@ -34,9 +36,11 @@ layout: doc
 [mip-history](/examples/mip-extensions/mip-history.html) |历史记录|封装了对历史记录的操作，实现页面间前进后退的功能。
 [mip-html-os](/examples/mip-extensions/mip-html-os.html) |操作系统|元素区分操作系统显示内容，支持 Andriod 和 iOS。
 [mip-infinitescroll](/examples/mip-extensions/mip-infinitescroll.html) |无限滚动|当用户滚动到页面底部时，加载更多。
+[mip-install-serviceworker](/examples/mip-extensions/mip-install-serviceworker.html) |离线可用组件|service worker 组件可以根据不同策略进行不同资源缓存，使其能够在离线情况下可访问。
 [mip-lightbox](/examples/mip-extensions/mip-lightbox.html) |弹出层|由用户控制展现或关闭的全屏浮层组件，组件全屏覆盖，组件里的元素超出屏幕会被隐藏，不能滑动。
 [mip-link](/examples/mip-extensions/mip-link.html) |跳转链接|实现两个 MIP 页面之间互相跳转的功能。
 [mip-list](/examples/mip-extensions/mip-list.html) |列表组件|可以渲染同步数据，或者异步请求数据后渲染。
+[mip-map](/examples/mip-extensions/mip-map.html) |百度地图组件|组件集成了百度地图的服务，目前支持具体位置定位、地图控件加载、marker 定位点弹窗信息定制等功能。
 [mip-nav-slidedown](/examples/mip-extensions/mip-nav-slidedown.html) |菜单|响应式菜单，在mip官网有引用。
 [mip-semi-fixed](/examples/mip-extensions/mip-semi-fixed.html) |滑动悬浮组件 |position:sticky的js兼容版本。页面元素滑动到顶部时自动贴顶。
 [mip-share](/examples/mip-extensions/mip-share.html) |分享|提供页面内分享按钮功能，默认分享当前网址。
@@ -44,11 +48,8 @@ layout: doc
 [mip-sidebar](/examples/mip-extensions/mip-sidebar.html) |侧边栏|侧边栏组件，点击按钮，侧边栏滑入屏幕。
 [mip-stats-baidu](/examples/mip-extensions/mip-stats-baidu.html) |百度统计|添加百度统计组件，用于统计页面数据。
 [mip-stats-tianrun](/examples/mip-extensions/mip-stats-tianrun.html) |天润统计|添加天润统计。
+[mip-vd-baidu](/examples/mip-extensions/mip-vd-baidu.html) | 百度视频组件 | HTTP 视频源播放的百度解决方案
 [mip-vd-tabs](/examples/mip-extensions/mip-vd-tabs.html) |tab 切换组件|在网页中显示标签。标签页内元素较多时不建议使用,会影响页面性能。
-[mip-bind](/examples/mip-extensions/mip-bind.html) |数据驱动组件|在页面中以数据作为驱动源，做到随着数据变动页面界面也会随之变动的功能。
-[mip-map](/examples/mip-extensions/mip-map.html) |百度地图组件|组件集成了百度地图的服务，目前支持具体位置定位、地图控件加载、marker 定位点弹窗信息定制等功能。
-[mip-access](/examples/mip-extensions/mip-access.html) |页面内容访问权限定制组件|mip-access 能够允许发布者对页面内容进行访问权限的控制，通过内容标记和用户访问情况进行综合评价，从而决定页面要展示的内容。
-[mip-install-serviceworker](/examples/mip-extensions/mip-install-serviceworker.html) |离线可用组件|service worker 组件可以根据不同策略进行不同资源缓存，使其能够在离线情况下可访问。
 
 ## 3. 广告组件
 
