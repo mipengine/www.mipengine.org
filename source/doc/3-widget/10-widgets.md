@@ -27,7 +27,7 @@ layout: doc
 [mip-appdl](/examples/mip-extensions/mip-appdl.html) |App 下载|App 下载，可区分安卓和 iOS。
 [mip-audio](/examples/mip-extensions/mip-audio.html) |音频播放|提供了一个音频播放组件
 [mip-experiment](/examples/mip-extensions/mip-experiment.html) |前端抽样实验|mip-experiment 组件用于前端抽样实验。  可用于按钮，banner，广告等前端可控元素的改版实验，与mip-pix，可配合使用。
-[mip-filter](/examples/mip-extensions/mip-filter.html) |筛选组件|筛选组件，自适应pc和wise宽度。mipengine.org有引用
+[mip-filter](/examples/mip-extensions/mip-filter.html) |筛选组件|筛选组件，自适应pc和wap宽度。mipengine.org有引用
 [mip-fixed](/examples/mip-extensions/mip-fixed.html) |悬浮布局|悬浮元素整体使用方案。
 [mip-form](/examples/mip-extensions/mip-form.html) |表单|表单提交。
 [mip-gototop](/examples/mip-extensions/mip-gototop.html) |快速回顶|添加快速回顶按钮，点击回到页面顶部。
