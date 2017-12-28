@@ -16,10 +16,9 @@ layout: doc
 
 - 必须在 head 标签中包含 &lt; link rel="stylesheet" type="text/css" href="https://c.mipcdn.com/static/v1/mip.css" &gt;
 
-- 必须在 body 标签中包含 &lt;script src="https://c.mipcdn.com/static/v1/mip.js" &gt;&lt;/script &gt;
-
 - 必须在 head 标签中包含 &lt;link rel="canonical" href="http(s)://xxx" &gt;
 
+- 需要在 body 标签中包含 &lt;script src="https://c.mipcdn.com/static/v1/mip.js" &gt;&lt;/script&gt;，如果包含在 head 标签中则须增加 async 属性;
 
 ## 页面元素使用规范
 
