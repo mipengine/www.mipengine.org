@@ -153,6 +153,11 @@
   "output": "examples/mip-extensions/mip-stats-tianrun.md",
   "preview": false
 }, {
+  "name": "mip-vd-baidu",
+  "type": "extensions",
+  "readme": "src/mip-vd-baidu/README.md",
+  "output": "examples/mip-extensions/mip-vd-baidu.md"
+}, {
   "name": "mip-vd-tabs",
   "type": "extensions",
   "readme": "src/mip-vd-tabs/README.md",
