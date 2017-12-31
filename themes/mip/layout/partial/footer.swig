@@ -12,10 +12,6 @@
     <mip-gototop></mip-gototop>
 </mip-fixed>
 
-<mip-fixed type="right" bottom="150" class="mipengine-ad">
-    <a href="http://brilliantopenweb.mikecrm.com/mpUeVmI" target="_blank">MIP技术改造有奖调研</a>
-</mip-fixed>
-
 <mip-stats-baidu token="4e397f684261b9e4ff9d8ad4714f5b2b"></mip-stats-baidu>
 <script src="https://c.mipcdn.com/static/v1/mip.js"></script>
 <script src="https://c.mipcdn.com/static/v1/mip-sidebar/mip-sidebar.js"></script>

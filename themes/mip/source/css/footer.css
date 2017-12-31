@@ -19,29 +19,3 @@
 .footer a:hover .fa-github {
     color: #24292e;
 }
-
-/* 技术改造调研 */
-mip-fixed.mipengine-ad {
-    margin-right: -25px;
-    right: 10%;
-}
-.mipengine-ad a {
-    cursor: pointer;
-    display: block;
-    width: 100px;
-    height: 100px;
-    background: url(/static/img/mip-gift3.png) no-repeat center center;
-            background-size: cover;
-    -webkit-background-size: cover;
-    font-size: 0;
-    text-indent: 1000px;
-}
-@media screen and (max-width: 767px) {
-    mip-fixed.mipengine-ad {
-        margin-right: -20px;
-    }
-    .mipengine-ad a {
-        width: 80px;
-        height: 80px;
-    }
-}
