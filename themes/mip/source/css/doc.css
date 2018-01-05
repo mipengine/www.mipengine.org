@@ -71,3 +71,30 @@
     }
 }
 
+/* 合作伙伴文档页 partners.html*/
+.partners-wrap mip-img {
+    width: 125px;
+    height: 70px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin: 0 12px 7px 0;
+    display: inline-block;
+}
+.partners-wrap mip-img img {
+    object-fit: contain;
+}
+.partners-wrap .kta-wrapper {
+    text-align: center;
+    padding: 20px;
+}
+.partners-wrap .kta {
+    margin: 20px auto;
+    border: 1px solid #3388ff;
+    color: #3388ff;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.partners-wrap .kta:hover {
+    text-decoration: none;
+    background: #eee;
+}

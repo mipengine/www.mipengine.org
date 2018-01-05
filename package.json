@@ -1,7 +1,7 @@
 {
   "name": "www.mipengine.org",
   "description": "基于 Hexo 的 MIP 官网站点。",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "hexo": {
     "version": "3.4.3"
   },
