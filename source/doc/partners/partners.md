@@ -38,7 +38,7 @@ layout: doc
 
 	<hr>
 	<div class="kta-wrapper">
-		<a class="kta" href="/doc/00-mip-101.html" data-type="mip">立即改造 MIP</a>
+		<a class="kta" href="/doc/00-mip-101.html" data-type="mip">立即使用 MIP</a>
 	</div>
 </div>
 
