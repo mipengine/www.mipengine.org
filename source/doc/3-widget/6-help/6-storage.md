@@ -2,6 +2,8 @@ title: 存储
 layout: doc
 ---
 
+存储模块提供的 JS 不能直接在页面`<script>`标签中使用，但在[开发 MIP 组件](https://www.mipengine.org/doc/2-tech/4-mip-widget.html)时可以在组件 JS 中引用。
+
 存储模块为站点提供数据存储的功能，包括 localStorage 存储方式、通过 fetch 请求携带存储数据，站点自行在后端管理存储的方式。
 
 ## 示例

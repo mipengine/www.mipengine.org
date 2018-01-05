@@ -2,7 +2,7 @@ title: 手势
 layout: doc
 ---
 
-MIP封装了单击，双击，滑动等手势，可在组件中使用。
+MIP封装了单击，双击，滑动等手势，可在[MIP组件开发](https://www.mipengine.org/doc/2-tech/4-mip-widget.html)中使用。
 组件中应用示例参见 [mip-img.js](https://github.com/mipengine/mip/blob/master/src/components/mip-img.js)
 
 ## 示例

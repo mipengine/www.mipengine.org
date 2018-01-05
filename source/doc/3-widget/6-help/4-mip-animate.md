@@ -2,6 +2,8 @@ title: 动画
 layout: doc
 ---
 
+下文提到的动画函数不能直接在页面`<script>`标签中使用，但在[开发MIP组件](https://www.mipengine.org/doc/2-tech/4-mip-widget.html)时可以在组件JS中引用。
+
 Naboo 是一个前端动画解决方案，包含动画调度机制和动画工具集，支持串并行动画及回调，支持自定义插件。组件中应用示例参见 [mip-img.js](https://github.com/mipengine/mip/blob/master/src/components/mip-img.js)
 
 ## 1. 声明

@@ -2,11 +2,11 @@ title: 其它
 layout: doc
 ---
 
-mip提供一些功能，以解决在组件中遇到的各种问题和提升开发效率。
+MIP 提供一些功能，以解决在[MIP组件开发](https://www.mipengine.org/doc/2-tech/4-mip-widget.html)中遇到的各种问题，并提升开发效率。
 
 ## prerenderElement
 
-提前渲染 mip 元素。
+提前渲染 MIP 组件。
 
 如果元素不在 viewport 内，强制触发元素的 viewportCallback firstInviewCallback 方法。
 
@@ -17,7 +17,7 @@ MIP.prerenderElement(element);
 
 ## event-action
 
-由于mip不允许使用附加的JS代码。所以提供了一套事件action机制，可以通过dom属性来触发某个mip元素的自定义事件。
+由于 MIP 不允许使用附加的 JS 代码。所以提供了一套事件 action 机制，可以通过 DOM 属性来触发某个 MIP 元素的自定义事件。
 
 html:
 ```

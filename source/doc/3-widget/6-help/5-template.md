@@ -2,7 +2,7 @@ title: template 模板
 layout: doc
 ---
 
-template 模板封装了第三方模板引擎 Mustache.js，可以访问[Mustache.js 文档](https://github.com/janl/mustache.js/)了解更多信息。本组件暂时只支持辅助其他组件完成模板渲染工作，直接使用不会渲染。
+template 模板封装了第三方模板引擎 Mustache.js，可以访问[Mustache.js 文档](https://github.com/janl/mustache.js/)了解更多信息。本组件暂时只支持辅助其他 MIP 组件完成模板渲染工作，直接使用不会渲染。个性化 MIP 组件需要按照[MIP组件开发规范](https://www.mipengine.org/doc/2-tech/4-mip-widget.html)封装。
 
 标题|内容
 ----|----
