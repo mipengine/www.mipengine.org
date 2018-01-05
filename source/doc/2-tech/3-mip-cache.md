@@ -1,4 +1,4 @@
-title: MIP Cache 规范
+title: MIP-Cache 规范
 layout: doc
 ---
 
@@ -8,7 +8,7 @@ layout: doc
 
 ## 使用方法
 
-[info] 在开发页面时，无需对 MIP Cache 进行额外关注，只要保证 MIP 页面、图片等资源是允许 MIP cache 的 UA（baidumip, baidumib）抓取即可。
+[info] 在开发页面时，无需对 MIP-Cache 进行额外关注，只要保证 MIP 页面、图片等资源是允许 MIP cache 的 UA（baidumip, baidumib）抓取即可。
 
 在引用图片等静态资源时，无论是否支持 https，直接引用本站服务器上的图片即可。如使用：`<mip-img src="http://www.baidu.com/logo.png">`。
 
@@ -58,20 +58,26 @@ http 资源：
 
 [warning] 强制使用 UTF-8 编码
 
-## MIP Cache 更新机制
+## MIP-Cache 更新机制
 
-### MIP Cache 常规更新机制
+### MIP-Cache 常规更新机制
 
-MIP Cache 常规更新机制也是页面最常规，最常用的更新机制。目前页面最短更新周期 **52 分钟 **，当用户访问 MIP 页面时，如果页面缓存已经超时，MIP Cache 会将当前页面返回给用户；与此同时，异步的发起一个请求，去更新 MIP Cache 中存储的页面。这样，后续访问这个页面的用户将会看到更新后的页面。目前，线上页面更新的平均时间（可以理解为有点击的间隔时间）为 1 天左右。目前抓取限制比较多的站点，更新的时效性无法保证，也请相关站长保证自己网站，服务的稳定性。
+MIP-Cache 常规更新机制也是页面最常规，最常用的更新机制。各种类型的资源更新策略为：
 
-### MIP Cache 快速更新机制
+- 页面的缓存时间为52分钟-5天（由该页面用户点击量和站点本身稳定性决定）。
+- 图片缓存时间为10天。
+- MIP-JS 组件文件的缓存时间为10分钟。
 
-考虑到一些特殊情况，需要尽快更新 MIP Cache 中的页面。比如线上 BUG 紧急修复、发现网页有黄反等需要紧急更新或者删除的内容时，MIP Cache 也开放了单独的清理接口，阅读 [MIP-cache 清理](http://zhanzhang.baidu.com/mip/index) 了解更多信息。生效时间大概 **5min**。
+在当前文件过期后，MIP-Cache 会重新抓取资源。如果是 HTML 页面，MIP-Cache 还会对页面文件进行 [MIP 规范校验](https://www.mipengine.org/validator/preview)。如果此时页面内容不再符合 [MIP 规范](https://www.mipengine.org/doc/2-tech/2-validate-mip.html)，MIP-Cache 就不再缓存这个页面了。这样，所有 MIP-Cache 中的页面都是最新的，并且符合 MIP 规范。  
 
-### MIP Cache 页面删除
+### MIP-Cache 快速更新机制
+
+考虑到一些特殊情况，需要尽快更新 MIP-Cache 中的页面。比如线上 BUG 紧急修复、发现网页有黄反等需要紧急更新或者删除的内容时，MIP-Cache 也开放了单独的清理接口，阅读 [MIP-cache 清理](http://zhanzhang.baidu.com/mip/index) 了解更多信息。生效时间大概 **5min**。
+
+### MIP-Cache 页面删除
 
 如果有一些废弃页面需要删除：
 
 - 站长首先删除本站原页面
-- 调用 MIP Cache 快速更新机制删除 Cache
-- 删除后，请给 MIP Cache 非 200（404 或者其他）状态码，防止 cache 中缓存错误页。
+- 调用 MIP-Cache 快速更新机制删除 Cache
+- 删除后，请给 MIP-Cache 非 200（404 或者其他）状态码，防止 cache 中缓存错误页。
