@@ -1,4 +1,22 @@
 [{
+    "time": "2017-12-22",
+    "type": "widget mip-audio",
+    "title": "mip-audio音频播放组件升级",
+    "version": "1",
+    "changelog": ["减少时间刷新频率，优化性能", "兼容PC端拖动事件", "支持自定义皮肤配置"],
+    "link": {
+        "文档": "/examples/mip-extensions/mip-audio.html"
+    }
+},{
+    "time": "2017-12-20",
+    "type": "widget mip-infinitescroll",
+    "title": "mip-infinitescroll 无限下拉组件增加按照后端数据确认加载完毕选项",
+    "version": "1",
+    "changelog": [],
+    "link": {
+        "文档": "/examples/mip-extensions/mip-infinitescroll.html#markdown-doc-%E6%A0%B9%E6%8D%AE%E8%BF%94%E5%9B%9E%E5%80%BC%E5%88%A4%E6%96%AD%E8%AF%B7%E6%B1%82%E7%BB%93%E6%9D%9F"
+    }
+},{
     "time": "2017-11-28",
     "type": "widget mip-map",
     "title": "新增 mip-map 地图组件，支持位置定位、地图控件加载、marker 定位点弹窗信息定制等功能",
