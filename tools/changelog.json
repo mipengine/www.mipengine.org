@@ -1,4 +1,15 @@
 [{
+    "time": "2018-01-19",
+    "type": "widget mip-stats-baidu",
+    "title": "mip-status-baidu 百度统计组件优化",
+    "version": "1",
+    "changelog": ["事件追踪兼容移动端tap事件，可追踪弹层按钮点击", "优化代码，去掉zepto库", "细化 data-stats-baidu-obj 事件追踪配置文档"],
+    "link": {
+        "文档": "/examples/mip-extensions/mip-stats-baidu.html",
+        "Issue #986": "https://github.com/mipengine/mip-extensions/issues/986",
+        "Issue #961": "https://github.com/mipengine/mip-extensions/issues/961"
+    }
+},{
     "time": "2017-12-22",
     "type": "widget mip-audio",
     "title": "mip-audio音频播放组件升级",
