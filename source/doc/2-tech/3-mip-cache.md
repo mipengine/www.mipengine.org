@@ -10,13 +10,15 @@ layout: doc
 
 [info] 在开发页面时，无需对 MIP-Cache 进行额外关注，只要保证 MIP 页面、图片等资源是允许 MIP cache 的 UA（baidumip, baidumib）抓取即可。
 
+MIP-Cache 完整 UA 为：`Mozilla/5.0 (Linux;u;Android 4.2.2;zh-cn;) AppleWebKit/534.46 (KHTML,like Gecko) Version/5.1 Mobile Safari/10600.6.3 (compatible; baidumib;mip; + https://www.mipengine.org)`
+
 在引用图片等静态资源时，无论是否支持 https，直接引用本站服务器上的图片即可。如使用：`<mip-img src="http://www.baidu.com/logo.png">`。
 
 ## MIP-Cache 生效流程
 
-在 MIP 页被爬虫抓取后，会自动对静态资源的进行缓存，并且替换页面中的静态资源引用地址为缓存地址。搜索结果页会优先跳转到 MIP-Cache url，在 MIP-Cache 缓存到期时进行一次回源，访问原页面 URL 并重新缓存。
+在 MIP 页被爬虫抓取后，会自动对静态资源的进行缓存，并且替换页面中的静态资源引用地址为缓存地址。搜索结果页会优先跳转到 MIP-Cache URL MIP-Cache 缓存到期时进行一次回源，访问原页面 URL 并重新缓存。
 
-## MIP cache 的 url 规则
+## MIP-Cache 的 URL 规则
 
 url 规则和下列情况有关：
 
@@ -26,7 +28,7 @@ url 规则和下列情况有关：
 
 例如：
 
-1、网页地址或 css、js
+1、网页地址或 CSS、Javascript
 
 https 资源：
 

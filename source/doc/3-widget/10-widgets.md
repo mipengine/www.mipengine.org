@@ -8,7 +8,7 @@ layout: doc
 
 <span class="minw-125">内置组件</span>|<span class="minw-60">中文</span>|描述
 ----|----|----
-[mip-carousel](/examples/mip/mip-carousel.html) | 多图轮播|mip-carousel 用来支持 mip 中图片的一种展示方式，支出多图轮播。
+[mip-carousel](/examples/mip/mip-carousel.html) | 多图轮播|mip-carousel 用来支持 mip 中图片的一种展示方式，支持多图轮播。
 [mip-iframe](/examples/mip/mip-iframe.html) | -|mip-iframe 是用来支持在 mip 中嵌入第三方内容的一种方式，需要注意的是：所嵌入的内容强制是符合https协议的。
 [mip-img](/examples/mip/mip-img.html) | 图片|mip-img 用来支持在 mip 中增加图片内容。
 [mip-pix](/examples/mip/mip-pix.html) | 统计|将 mip-pix 组件直接引入，可发送带有自定义参数的请求，用于统计页面访问情况。这些参数主要包括页面打开时间点，页面title和当面页面地址。
@@ -28,7 +28,7 @@ layout: doc
 [mip-appdl](/examples/mip-extensions/mip-appdl.html) |App 下载|App 下载，可区分安卓和 iOS。
 [mip-audio](/examples/mip-extensions/mip-audio.html) |音频播放|提供了一个音频播放组件
 [mip-bind](/examples/mip-extensions/mip-bind.html) |数据驱动组件|在页面中以数据作为驱动源，做到随着数据变动页面界面也会随之变动的功能。
-[mip-experiment](/examples/mip-extensions/mip-experiment.html) |前端抽样实验|mip-experiment 组件用于前端抽样实验。  可用于按钮，banner，广告等前端可控元素的改版实验，与mip-pix，可配合使用。
+[mip-experiment](/examples/mip-extensions/mip-experiment.html) |前端抽样实验|mip-experiment 组件用于前端抽样实验。可用于按钮，banner，广告等前端可控元素的改版实验，与mip-pix可配合使用。
 [mip-filter](/examples/mip-extensions/mip-filter.html) |筛选组件|筛选组件，自适应 PC 端和移动端宽度。 [mipengine.org](https://www.mipengine.org/timeline.html)有引用
 [mip-fixed](/examples/mip-extensions/mip-fixed.html) |悬浮布局|悬浮元素整体使用方案。
 [mip-form](/examples/mip-extensions/mip-form.html) |表单|表单提交。
@@ -41,19 +41,19 @@ layout: doc
 [mip-link](/examples/mip-extensions/mip-link.html) |跳转链接|实现两个 MIP 页面之间互相跳转的功能。
 [mip-list](/examples/mip-extensions/mip-list.html) |列表组件|可以渲染同步数据，或者异步请求数据后渲染。
 [mip-map](/examples/mip-extensions/mip-map.html) |百度地图组件|组件集成了百度地图的服务，目前支持具体位置定位、地图控件加载、marker 定位点弹窗信息定制等功能。
-[mip-nav-slidedown](/examples/mip-extensions/mip-nav-slidedown.html) |菜单|响应式菜单，在mip官网有引用。
+[mip-nav-slidedown](/examples/mip-extensions/mip-nav-slidedown.html) |菜单|响应式菜单。
 [mip-semi-fixed](/examples/mip-extensions/mip-semi-fixed.html) |滑动悬浮组件 |position:sticky的js兼容版本。页面元素滑动到顶部时自动贴顶。
 [mip-share](/examples/mip-extensions/mip-share.html) |分享|提供页面内分享按钮功能，默认分享当前网址。
 [mip-showmore](/examples/mip-extensions/mip-showmore.html) |显示更多|隐藏过长的文章，点击按钮显示更多内容。
 [mip-sidebar](/examples/mip-extensions/mip-sidebar.html) |侧边栏|侧边栏组件，点击按钮，侧边栏滑入屏幕。
 [mip-stats-baidu](/examples/mip-extensions/mip-stats-baidu.html) |百度统计|添加百度统计组件，用于统计页面数据。
 [mip-stats-tianrun](/examples/mip-extensions/mip-stats-tianrun.html) |天润统计|添加天润统计。
-[mip-vd-baidu](/examples/mip-extensions/mip-vd-baidu.html) | 百度视频组件 | HTTP 视频源播放的百度解决方案
+[mip-vd-baidu](/examples/mip-extensions/mip-vd-baidu.html) | 百度视频组件 | HTTP 视频源播放的百度解决方案。
 [mip-vd-tabs](/examples/mip-extensions/mip-vd-tabs.html) |tab 切换组件|在网页中显示标签。标签页内元素较多时不建议使用,会影响页面性能。
 
 ## 3. 广告组件
 
-广告组件主要满足各类广告的投放，需要引入对应的 js 脚本。阅读[广告文档](/examples/mip-ad/mip-ad.html)来确定 MIP 广告类型.
+广告组件主要满足各类广告的投放，需要引入对应的 JavaScript 脚本。阅读[广告文档](/examples/mip-ad/mip-ad.html)来确定 MIP 广告类型.
 
 <span class="minw-125">广告组件</span>|<span class="minw-60">中文</span>|描述
 ----|----|----
