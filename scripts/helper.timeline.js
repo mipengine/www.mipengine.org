@@ -36,7 +36,7 @@ hexo.extend.helper.register('timeline_item', () => {
         if (val.link) {
             link = Object.keys(val.link)
                 .map(text => `<a target="_blank" href="${val.link[text]}">${text}</a>`)
-                .join('');
+                .join('<span class="timeline-split">，</span>');
         }
 
         if (val.version) {
