@@ -3,7 +3,7 @@
   "description": "基于 Hexo 的 MIP 官网站点。",
   "version": "0.0.21",
   "hexo": {
-    "version": "3.4.3"
+    "version": "3.4.4"
   },
   "scripts": {
     "lint": "fecs check scripts/ test/ tools/ --rule",

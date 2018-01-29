@@ -98,3 +98,7 @@
     text-decoration: none;
     background: #eee;
 }
+
+.white-bg {
+    background: white;
+}
