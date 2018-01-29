@@ -1,7 +1,7 @@
 {
   "name": "www.mipengine.org",
   "description": "基于 Hexo 的 MIP 官网站点。",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "hexo": {
     "version": "3.4.4"
   },
@@ -41,7 +41,7 @@
     "glob": "^7.1.2",
     "got": "^7.1.0",
     "hexo": "^3.2.0",
-    "hexo-generator-mip": "^0.5.0",
+    "hexo-generator-mip": "^0.6.0",
     "hexo-server": "^0.2.0",
     "highlight.js": "^9.12.0",
     "husky": "^0.14.3",
