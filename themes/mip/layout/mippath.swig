@@ -11,7 +11,7 @@
             <h1 class="article-title">{{ page.title }}</h1>
           </header>
           <div class="mippath-article-content">
-            <h3>MIP页URL、MIP-CacheURL、百度结果页URL转换</h3>
+            <h3>MIP 页 URL、MIP-Cache URL、百度结果页 URL 转换</h3>
             <p class="mippath-tip">请输入页面地址。当输入为空时，直接转换默认网址</p>
 
             <div class="mippath-text">

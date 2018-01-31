@@ -6,11 +6,11 @@ doc:
     MIP 加速原理: /doc/03-principle-of-mip.html
     MIP 内容声明: /doc/04-announcement.html
   开发规范:
-    MIP HTML 规范: /doc/2-tech/1-mip-html.html
+    MIP-HTML 规范: /doc/2-tech/1-mip-html.html
+    MIP-Cache 规范: /doc/2-tech/3-mip-cache.html
     MIP 校验规则: /doc/2-tech/2-validate-mip.html
-    MIP Cache 规范: /doc/2-tech/3-mip-cache.html
-    组件开发规范: /doc/2-tech/4-mip-widget.html
     Canonical 使用规范: /doc/2-tech/5-show-your-page.html
+    组件开发规范: /doc/2-tech/4-mip-widget.html
   组件说明:
     MIP 组件列表: /doc/3-widget/10-widgets.html
     组件布局: /doc/3-widget/11-widget-layout.html

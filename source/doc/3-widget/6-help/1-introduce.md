@@ -2,16 +2,17 @@ title: 开发辅助工具和模块
 layout: doc
 ---
 
-mip.js内置了一些开发工具和模块，使用原生JS实现通用的函数。这些函数不能直接在页面`<script>`标签中使用，但在[开发MIP组件](https://www.mipengine.org/doc/2-tech/4-mip-widget.html)时可以在组件JS中引用。
+`mip.js` 内置了一些开发工具和模块，使用原生 JS 实现通用的函数。这些函数不能直接在页面`<script>`标签中使用，但在[开发MIP组件](https://www.mipengine.org/doc/2-tech/4-mip-widget.html)时可以在组件 JS 中引用。
 
 本文包含三个部分：
-1、替代jquery、zepto
-2、viewport帮助
-3、jquery、zepto引入
 
-## 1、替代 jquery、zepto
+1. 替代jquery、zepto
+2. viewport帮助
+3. jquery、zepto引入
 
-mip 不推荐使用 jquery 和 zepto。
+## 1. 替代 jquery、zepto
+
+MIP 不推荐使用 jquery 和 zepto。
 
 为什么不推荐?
 1、原生JS已经足够好用
