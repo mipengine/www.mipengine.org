@@ -2,9 +2,9 @@
 
 非常感谢您关注 [mipengine](https://github.com/mipengine)/[www.mipengine.org](https://github.com/mipengine/www.mipengine.org) 项目，在提交您的贡献之前，请务必认真阅读以下准则。
 
-- [问题反馈](#issue)
+- [问题反馈](#Issue)
 - [开发指南](#develop)
-    - [常用脚本命令（ npm scripts ）](#npm-scripts)
+    - [常用脚本命令（npm scripts）](#npm-scripts)
     - [代码风格](#code-spec)
     - [项目结构](#dir-spec)
     - [提交请求（pull request）](#pull-request)
@@ -13,11 +13,11 @@
     - [文档提醒语法](#docs-tips)
     - [新增文档](#new-docs)
 
-<a id="issue"></a>
+<a id="Issue"></a>
 ## 问题反馈
 
-- 请避免提交重复的 issue，在提交之前搜索现有的 issue 。
-- 请确定 issue 的类型，并在 issue 内容描述清晰，我们将根据内容对 issue 打上对应的 label 。
+- 请避免提交重复的 Issue，在提交之前搜索现有的 Issue 。
+- 请确定 Issue 的类型，并在 Issue 内容描述清晰，我们将根据内容对 Issue 打上对应的 label 。
 - [组件列表](https://www.mipengine.org/doc/3-widget/10-widgets.html) 内所有组件文档请参考文档页面标题右侧编辑按钮提交。
 
 <a id="develop"></a>
@@ -26,7 +26,7 @@
 需要安装 [nodejs](https://nodejs.org/) 版本4+ ，下载项目到本地后安装依赖 `npm install` ，安装完成后将自动更新 [核心内置组件](https://github.com/mipengine/mip/tree/master/src/components) 和 [官方扩展组件文档](https://github.com/mipengine/mip-extensions) 到本地。
 
 <a id="npm-scripts"></a>
-### 常用脚本命令（ npm scripts ）
+### 常用脚本命令（npm scripts）
 
 ``` bash
 # 启动本地 http 服务器用来本地预览
@@ -62,7 +62,7 @@ $ npm run lint
 │   ├── _data
 │   │   ├── menu.yml        - 顶部导航配置
 │   │   └── sidebar.yml     - 文档左面导航配置
-│   ├── doc                 - 文档 markdown 源文件目录
+│   ├── doc                 - 文档 Markdown 源文件目录
 │   └── examples            - 组件预览源目录，该目录不在本仓库维护
 ├── test                    - 验证 MIP 规范、死链接检测脚本
 ├── themes                  - MIP 官网定制化主题
@@ -111,16 +111,16 @@ git commit 信息和 pull request 标题必须遵循 MIP 项目的 [提交信息
 在段落前插入 `特殊标记` 用于重点强调信息，如：
 
 ```
-[notice] MIP 十分关注页面速度，也因此禁用了一些引起拖慢速度的 html 标签。
+[notice] MIP 十分关注页面速度，也因此禁用了一些引起拖慢速度的 HTML 标签。
 
-[info] MIP HTML 基于 HTML 基础规范进行了扩展。
+[info] MIP-HTML 基于 HTML 基础规范进行了扩展。
 
-[warning] 出于对代码质量和性能的考虑， MIP 页中不允许自定义 javascript 代码。
+[warning] 出于对代码质量和性能的考虑， MIP 页中不允许自定义 JavaScript 代码。
 ```
 
 显示的样式如下：
 
-![image](https://user-images.githubusercontent.com/3872051/32155586-25267f66-bd73-11e7-8c3e-dc862e4aa530.png)
+![image](https://user-images.githubusercontent.com/3872051/35958213-897adb2c-0cda-11e8-8134-6ac45d19aa97.png)
 
 <a id="new-docs"></a>
 ### 新增文档
@@ -150,5 +150,5 @@ description: 描述
 
 - `title` - 配置页面标题内容。
 - `layout: post` - 配置继承 `themes/mip/layout/post.swig` 模板，为文章类型，也可以继承 `doc` 模板。
-- `keywords` - 配置页面关键词信息，默认为 `_config.yml` 配置内容，如果为 false 表示不输出。
-- `description` - 配置页面描述信息，默认为 `_config.yml` 配置内容，如果为 false 表示不输出。
+- `keywords` - 配置页面关键词信息，默认为 `_config.yml` 配置内容，如果为 `false` 表示不输出。
+- `description` - 配置页面描述信息，默认为 `_config.yml` 配置内容，如果为 `false` 表示不输出。

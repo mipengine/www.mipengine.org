@@ -4,7 +4,7 @@ layout: doc
 
 MIP 页面会有严格的规范校验，不允许存在任何校验不通过的问题存在。如需审查页面规范，可通过 [MIP 代码校验工具](https://www.mipengine.org/validator/validate ) 查看。本文档意在帮助开发者找到校验的内容和规则，快速定位校验不通过的原因。
 
-## MIP HTML 标签和属性错误
+## MIP-HTML 标签和属性错误
 
 ### 1. 强制性标签缺失
 

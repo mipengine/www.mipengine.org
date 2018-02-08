@@ -35,7 +35,7 @@
                         <div class="row index-whats-row">
                             <a data-title="MIP HTML 规范" class="col-xs-4 index-whats-border-left" href="/doc/2-tech/1-mip-html.html">
                                 <span class="index-whats-img sprite-html"></span>
-                                <h3 class="index-subheader">MIP HTML</h2>
+                                <h3 class="index-subheader">MIP-HTML</h2>
                             </a>
                             <a data-title="MIP 加速原理" class="col-xs-4 index-whats-border-left" href="/doc/03-principle-of-mip.html">
                                 <span class="index-whats-img sprite-js"></span>
@@ -88,7 +88,7 @@
                 <p class="section-intro-subtext">
                     MIP 语法基于 HTML 并提供详细的示例<br>开发者仅需做简单开发
                 </p>
-                <a data-title="MIP HTML 规范" class="section-intro-btn" href="/doc/2-tech/1-mip-html.html">
+                <a data-title="MIP-HTML 规范" class="section-intro-btn" href="/doc/2-tech/1-mip-html.html">
                     查看更多
                     <i class="fa fa-chevron-right"></i>
                 </a>
