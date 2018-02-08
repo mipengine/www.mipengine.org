@@ -21,49 +21,55 @@ const renderer = new marked.Renderer();
  */
 renderer.heading = (text, level) => `<h${level} id="markdown-doc-${encodeURIComponent(text)}">${text}</h${level}>`;
 
+
+/**
+ * 提示关键词列表
+ *
+ * @const
+ * @type {Object}
+ */
+const TIPS_MAP = {
+    info: {
+        icon: 'fa-info-circle',
+        text: '提示：'
+    },
+    notice: {
+        icon: 'fa-exclamation-triangle',
+        text: '注意：'
+    },
+    warning: {
+        icon: 'fa-window-close',
+        text: '警告'
+    }
+};
+
 /**
  * 扩展提醒语法
  *
- * @param  {string} text 文本
+ * @param  {string} content 文本
  *
  * @return {string}
  */
-renderer.paragraph = text => {
-    const rexResults = text.match(/\[(.+)\]/);
-    const tipType = rexResults ? rexResults[1] : '';
-    let tipContent = text.replace(/\[(.+)\]/, '');
-    let paraClass = '';
-    let paraIcon = '';
-    let result = '';
+renderer.paragraph = content => {
+    const reg = new RegExp(`^\\[(${Object.keys(TIPS_MAP).join('|')})\\]\\s*`);
+    const matched = String(content).match(reg);
+    const type = matched ? matched[1] : null;
 
-    switch (tipType) {
-        case 'info':
-            paraClass = ' class="para-tip para-info"';
-            tipContent = '<span class="para-content">'
-                + '<span class="para-tip-text">提示：</span>'
-                + tipContent + '</span>';
-            paraIcon = '\n<i class="fa fa-info-circle" aria-hidden="true"></i>\n';
-            break;
-
-        case 'notice':
-            paraClass = ' class="para-tip para-notice"';
-            tipContent = '<span class="para-content">'
-                + '<span class="para-tip-text">注意：</span>'
-                + tipContent + '</span>';
-            paraIcon = '\n<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>\n';
-            break;
-
-        case 'warning':
-            paraClass = ' class="para-tip para-warning"';
-            tipContent = '<span class="para-content">'
-                + '<span class="para-tip-text">警告：</span>'
-                + tipContent + '</span>';
-            paraIcon = '\n<i class="fa fa-window-close" aria-hidden="true"></i>\n';
-            break;
+    // 没有匹配到，直接返回个段落
+    if (!type) {
+        return `<p>${content}</p>`;
     }
 
-    result = '<p' + paraClass + '>\n' + paraIcon + tipContent + '</p>\n';
-    return result;
+    const icon = TIPS_MAP[type].icon;
+    const text = TIPS_MAP[type].text;
+    const after = content.replace(matched[0], '');
+
+    return [
+        '<p class="para-tip para-' + type + '">',
+            '<i class="fa ' + icon + '" aria-hidden="true"></i>',
+            '<span class="para-content"><span class="para-tip-text">' + text + '</span>' + after + '</span>',
+        '</p>'
+    ].join('\n');
 };
 
 /**
