@@ -20,10 +20,10 @@ MIP-HTML 禁止使用对页面性能以及安全有较大影响的标签，同�
 
 |标签|使用范围|备注|
 |--|--|--|
-|`<img>`	|<span class="mipengine-doc-red">禁止使用</span>|需替换为 `<mip-img>`|
-|`<video>`	|<span class="mipengine-doc-red">禁止使用</span>|需替换为 `<mip-video>`|
-|`<audio>`	|<span class="mipengine-doc-red">禁止使用</span>|需替换为 `<mip-audio>`|
-|`<iframe>`	|<span class="mipengine-doc-red">禁止使用</span>|需替换为 `<mip-iframe>`|
+|`<img>`    |<span class="mipengine-doc-red">禁止使用</span>|需替换为 `<mip-img>`|
+|`<video>`  |<span class="mipengine-doc-red">禁止使用</span>|需替换为 `<mip-video>`|
+|`<audio>`  |<span class="mipengine-doc-red">禁止使用</span>|需替换为 `<mip-audio>`|
+|`<iframe>` |<span class="mipengine-doc-red">禁止使用</span>|需替换为 `<mip-iframe>`|
 |`<form>`   |<span class="mipengine-doc-red">禁止使用</span>|需替换为 `<mip-form>`|
 |`<frame>`  |<span class="mipengine-doc-red">禁止使用</span>||
 |`<frameset>`|<span class="mipengine-doc-red">禁止使用 </span>||
@@ -32,14 +32,14 @@ MIP-HTML 禁止使用对页面性能以及安全有较大影响的标签，同�
 |`<applet>` |<span class="mipengine-doc-red">禁止使用</span>||
 |`<embed>`  |<span class="mipengine-doc-red">禁止使用</span>||
 |`<script>` |<span class="mipengine-doc-orange">限制使用</span>|<span>禁止使用 `<script>` 不包括以下两种场景：</span><ul><li>`src` 属性存在<ul><li>`type` 必须 `text/javascript` 、`application/javascript` 或 `type` 不存在（即没有 `type` 属性）</li><li>`src` 必须是 `https` 或 `//` 开头</li><li>`src` 必须是 MIP 域名，否则禁止使用</li><li>如果在 `<head>` 中，必须加 `async` 属性</li></ul></li><li>`src`  属性不存在<ul><li>`type` 必须是 `application/json` 或 `application/ld+json`</li><li>`script` 不强制大小写，不区分单双引号</li></ul></li><li>`script` 父节点不能是 `template`</li></ul>|
-|`<style>`	|<span class="mipengine-doc-orange">替换为 `<style mip-custom>`</span>|只能在 `<head>` 标签中使用一次|
-|`<svg>`	|<span class="mipengine-doc-green">允许使用</span>||
-|`<button>`	|<span class="mipengine-doc-green">允许使用</span>||
-|`<link>`	|<span class="mipengine-doc-green">允许使用</span>|<ul><li>`<link>` 必须在 `<head>` 中<br></li><li>必须存在 `rel="miphtml"` 或 `rel="canonical"` 的 `<link>` 标签</li><li>拥有 `rel="miphtml"` 或 rel=`"canonical"` 的标签之间或自身不能重复</li><li>如果 `rel="miphtml"` 或 `rel="canonical"` ，则 `href` 必须以 `https` 、`http` 或 `//` 开头</li><li>如果非 `rel="miphtml"` 或 `rel="canonical"` ，则 `href` 必须以非 `/` 开头（除 `//`）</li></ul>|
-|`<a>`	    |<span class="mipengine-doc-green">允许使用</span> | <ul><li>`href` 属性必填，同时其值不可以 `href="javascript:"`</li><li>MIP 页之间跳转推荐使用 [`<a data-type="mip">`](/examples/mip-extensions/mip-link.html)</li></ul>|
+|`<style>`  |<span class="mipengine-doc-orange">替换为 `<style mip-custom>`</span>|只能在 `<head>` 标签中使用一次|
+|`<svg>`    |<span class="mipengine-doc-green">允许使用</span>||
+|`<button>` |<span class="mipengine-doc-green">允许使用</span>||
+|`<link>`   |<span class="mipengine-doc-green">允许使用</span>|<ul><li>`<link>` 必须在 `<head>` 中<br></li><li>必须存在 `rel="miphtml"` 或 `rel="canonical"` 的 `<link>` 标签</li><li>拥有 `rel="miphtml"` 或 rel=`"canonical"` 的标签之间或自身不能重复</li><li>如果 `rel="miphtml"` 或 `rel="canonical"` ，则 `href` 必须以 `https` 、`http` 或 `//` 开头</li><li>如果非 `rel="miphtml"` 或 `rel="canonical"` ，则 `href` 必须以非 `/` 开头（除 `//`）</li><li>**注：支持引入外链 CSS**</li></ul>|
+|`<a>`      |<span class="mipengine-doc-green">允许使用</span> | <ul><li>`href` 属性必填，同时其值不可以 `href="javascript:"`</li><li>MIP 页之间跳转推荐使用 [`<a data-type="mip">`](/examples/mip-extensions/mip-link.html)</li></ul>|
 |`<source>`|<span class="mipengine-doc-green">允许使用</span>|其父元素必须是 `<mip-video>`、`<mip-audio>`、`<picutre>`，其他均不可|
 |`<base>`|<span class="mipengine-doc-green">允许使用</span>|<ul><li>不能存在多个</li><li>必须在 `<head>` 标签中</li><li>属性必须存在 `target` 或 `href` 属性之一</li><li>`target` 必须为 `_top` 、`_self` 或 `_blank`</li><li>`href` 必须 `/`</li></ul>|
-|input elements	|<span class="mipengine-doc-green">允许使用</span>|<ul><li>包括: `<select>` 、`<option>` 、 `<textarea>` 、`<input>`</li><li>父元素必须是 `<mip-form>`</li><li>`<source>` 的 `src` 必须存在且非 `/` 开头的相对路径</li></ul>|
+|input elements |<span class="mipengine-doc-green">允许使用</span>|<ul><li>包括: `<select>` 、`<option>` 、 `<textarea>` 、`<input>`</li><li>父元素必须是 `<mip-form>`</li><li>`<source>` 的 `src` 必须存在且非 `/` 开头的相对路径</li></ul>|
 
 
 ## 自定义标签
