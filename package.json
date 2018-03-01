@@ -1,9 +1,9 @@
 {
   "name": "www.mipengine.org",
   "description": "基于 Hexo 的 MIP 官网站点。",
-  "version": "0.0.24",
+  "version": "0.0.25",
   "hexo": {
-    "version": "3.4.4"
+    "version": "3.5.0"
   },
   "scripts": {
     "lint": "fecs check scripts/ test/ tools/ --rule",
@@ -40,8 +40,9 @@
     "fecs": "1.4.x",
     "glob": "^7.1.2",
     "got": "^7.1.0",
-    "hexo": "^3.2.0",
+    "hexo": "3.5.0",
     "hexo-generator-mip": "^0.6.0",
+    "hexo-html-minifier": "^0.0.2",
     "hexo-server": "^0.2.0",
     "highlight.js": "^9.12.0",
     "husky": "^0.14.3",
@@ -52,8 +53,7 @@
     "rimraf": "^2.6.2",
     "unzip": "^0.1.11",
     "validate-commit-msg": "^2.14.0",
-    "yamljs": "^0.3.0",
-    "hexo-html-minifier": "^0.0.2"
+    "yamljs": "^0.3.0"
   },
   "keywords": [
     "MIP"

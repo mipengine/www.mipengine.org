@@ -4,6 +4,7 @@
 
 [![MIP徽章](https://img.shields.io/badge/Powered%20by-MIP-brightgreen.svg)](https://www.mipengine.org)
 [![Build Status](https://travis-ci.org/mipengine/www.mipengine.org.svg?branch=master)](https://travis-ci.org/mipengine/www.mipengine.org)
+![node version required](https://img.shields.io/badge/node-%3E=4.0.0-green.svg)
 
 ## 使用
 
