@@ -225,4 +225,9 @@
   "type": "extensions",
   "readme": "src/mip-install-serviceworker/README.md",
   "output": "examples/mip-extensions/mip-install-serviceworker.md"
+}, {
+  "name": "mip-story",
+  "type": "extensions",
+  "readme": "src/mip-story/README.md",
+  "output": "examples/mip-extensions/mip-story.md"
 }]

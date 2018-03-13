@@ -50,6 +50,7 @@ layout: doc
 [mip-stats-tianrun](/examples/mip-extensions/mip-stats-tianrun.html) |天润统计|添加天润统计。
 [mip-vd-baidu](/examples/mip-extensions/mip-vd-baidu.html) | 百度视频组件 | HTTP 视频源播放的百度解决方案。
 [mip-vd-tabs](/examples/mip-extensions/mip-vd-tabs.html) |tab 切换组件|在网页中显示标签。标签页内元素较多时不建议使用，会影响页面性能。
+[mip-story](/examples/mip-extensions/mip-story.html) |小故事组件|引入更好质量和多元化的内容的功能组件。
 
 ## 3. 广告组件
 
