@@ -2,18 +2,18 @@ title: 开发小故事
 layout: doc
 ---
 
-## 一、小故事是什么？
+## 小故事是什么？
 
 ### 小故事是什么
 小故事是一种可交互的多媒体卡片，是由多元化内容组成的媒体形态，可带来沉浸式、多媒体、可交互的浏览体验。
 
 ### 小故事产品构成
-小故事卡可有单个或多个 story（热点），每个 story 下有多个 view（段落），每个 view（段落）可自由组合音频、视频、图片、GIF、文字等富媒体元素。
+每个小故事（Story）下有多个段落（View），每个段落（View）可自由组合音频、视频、图片、GIF、文字等富媒体元素(Element)。
 
 <mip-img src="//bos.nj.bpc.baidu.com/v1/agroup/48a9b5adb91150fd48b20d2c63664d27ef00899b" width="588" height="315" layout="responsive" alt="MIP Story 搜索结果页卡片样式"></mip-img>
 
 ### 小故事面向人群
-百度提供平台及工具能力，开放给站长、自媒体、开发者、商家等各种可以提供优质有创意内容的人群。
+小故事采用开放的[MIP技术](https://www.mipengine.org/)，能让站长、自媒体、开发者、商家等各种可以提供优质有创意内容的人群使用工具或MIP技术进行小故事创作。
 
 ### 展示示例
 
@@ -26,23 +26,7 @@ layout: doc
     height="568"
     src="//mip-extensions.bj.bcebos.com/mip-story/story-in-baidu.mp4"></mip-video>
 
-## 二、准备工作
-### MIP 基础知识
-
-开始本教程之前，需要掌握以下内容：
-
-- HTML、CSS 的基本知识
-- HTML 文件在浏览器中预览方法（可直接在浏览器打开或者基于 WEB 服务器打开）
-- 了解 [MIP 组件使用方法](/doc/00-mip-101.html)
-- 了解 [MIP-HTML 规范](/doc/2-tech/1-mip-html.html) ，如：
-  - 不能直接使用img，替换为 `<mip-img>`
-  - 不能直接使用行内 `style`，需要标注 `class` ，将样式内联在 `<head>` 中
-
-### 下载小故事demo
-
-~~点击 <https://www.mipengine.org/raw/mip-story-demo.zip> 下载小故事运行示例，可快速帮助熟悉小故事的开发和运行，下载解压后直接浏览器打开 `index.html`  即可看到效果。~~
-
-## 三、开发第一个小故事
+## 起步教程
 
 ### 1. 小故事知识储备和开发环境准备
 小故事主要由 [mip-story 组件](/examples/mip-extensions/mip-story.html) 承载，充当小故事中所有段落的容器，按照段落个数自动生成段落导航，返回链接，段落播放完的重播和分享功能。
@@ -81,11 +65,19 @@ layout: doc
 并且 HTML 文件需要遵循 [MIP-HTML 规范](https://www.mipengine.org/doc/2-tech/1-mip-html.html) ，点击 [MIP 文档](https://www.mipengine.org/doc/00-mip-101.html) 了解更多。
 
 ### 2. 开发小故事
+开发一个小故事，只需要简单的三部：
+
+1. 创建封面以及段落；
+2. 为段落添加丰富内容；
+3. 为小故事添加封底；
+
+下面请跟随详细步骤教程开始制作你的第一个小故事吧！
+
 #### 2.1 创建多个小故事段落（view）
 ```html
 <mip-story>
     <mip-story-view>
-        第一个段落
+        第一个段落（封面）
     </mip-story-view>
     <mip-story-view>
         第二个段落
@@ -161,21 +153,21 @@ layout: doc
 - `share.title` - 分享的标题
 - `share.from` - 分享的来源
 
-## 四、预览效果
+## 预览效果
 
-在浏览器打开编辑的 HTML 文件，预览页面并确认最终效果。
+小故事开发完成后，可以直接在浏览器打开编辑的 HTML 文件，预览并确认最终效果。
 
-## 五、小故事规范校验
+## 小故事规范校验
 
-小故事基于 [MIP](https://www.mipengine.oorg) 开发，遵循 [MIP-HTML 开发规范](https://www.mipengine.org/doc/2-tech/1-mip-html.html)，开发预览完成后，打开 [MIP 代码校验工具](https://www.mipengine.org/validator/validate)，复制代码到校验工具框内，确认校验通过。点击 [MIP 校验规则](https://www.mipengine.org/doc/2-tech/2-validate-mip.html) 了解相关校验说明。
+小故事基于 [MIP技术](https://www.mipengine.org) 来进行开发，遵循 [MIP-HTML 开发规范](https://www.mipengine.org/doc/2-tech/1-mip-html.html)，开发预览完成后，打开 [MIP 代码校验工具](https://www.mipengine.org/validator/validate)，复制代码到校验工具框内，确认校验通过。点击 [MIP 校验规则](https://www.mipengine.org/doc/2-tech/2-validate-mip.html) 了解相关校验说明。
 
-## 六、发布小故事
+## 发布小故事
 确认小故事页面规范校验通过后，需要将 HTML 文件发布到服务器以便互联网可以通过链接正常访问，通过以下方式让百度搜索引擎发布：
 
 1. 保持服务器稳定可被访问，搜索蜘蛛将主动抓取 HTML 页面
 2. 登录[百度站长平台](http://zhanzhang.baidu.com)，提交 MIP 网站验证，并主动提交 MIP 数据
 
-## 七、小故事进阶教程
+## 小故事进阶教程
 
 ### 1. 增加更多元素布局
 布局是段落中非常重要的功能，小故事同样也提供了不同的布局方式来供开发者使用，其中包括：
@@ -276,6 +268,22 @@ animate-in | 说明
 - PV 使用 [mip-pix 组件统计](/examples/mip/mip-pix.html)
 - 交互行为日志使用 [mip-stats-baidu 组件统计](/examples/mip-extensions/mip-stats-baidu.html)
 
+## 更多材料
+
+### 下载小故事demo
+
+~~点击 <https://www.mipengine.org/raw/mip-story-demo.zip> 下载小故事运行示例，可快速帮助熟悉小故事的开发和运行，下载解压后直接浏览器打开 `index.html`  即可看到效果。~~
+
+### MIP 基础知识
+
+MIP技术包含以下：
+
+- HTML、CSS 的基本知识
+- HTML 文件在浏览器中预览方法（可直接在浏览器打开或者基于 WEB 服务器打开）
+- 了解 [MIP 组件使用方法](/doc/00-mip-101.html)
+- 了解 [MIP-HTML 规范](/doc/2-tech/1-mip-html.html) ，如：
+  - 不能直接使用img，替换为 `<mip-img>`
+  - 不能直接使用行内 `style`，需要标注 `class` ，将样式内联在 `<head>` 中
 
 ## 里程碑
 
