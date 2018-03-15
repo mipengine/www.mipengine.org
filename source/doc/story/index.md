@@ -148,10 +148,12 @@ layout: doc
     ...
 </mip-story>
 ```
-- `share.thumbnail` - 分享的缩略图
-- `share.background` - 分享的背景图
-- `share.title` - 分享的标题
-- `share.from` - 分享的来源
+
+- `share` - 字段下包含的是分享相关的数据
+- `share.thumbnail` - 预览小故事的缩略图地址
+- `share.background` - 结尾页背景图片地址
+- `share.title` - 小故事标题
+- `share.from` - 资源的来源信息
 
 ## 预览效果
 
@@ -262,6 +264,11 @@ animate-in | 说明
 `fly-in-bottom` | 下侧滑入
 `fly-in-left` | 左侧滑入
 `fly-in-right` | 右侧滑入
+`twirl-in` | 旋转进入
+`whoosh-in-left` | 左侧飞入
+`whoosh-in-right` | 右侧飞入
+`rotate-in-left` | 左侧旋转飞入
+`rotate-in-right` | 右侧旋转飞入
 
 ### 4. 添加统计
 
