@@ -200,18 +200,18 @@ layout: doc
 
   - 添加方式
 
-  在 `<mip-story>` 中添加 `background-audio` 属性，用于指定具体音频地址，其中音频地址需要是 HTTPS，否则在 MIP-Cache 下会加载失败。
+    在 `<mip-story>` 中添加 `background-audio` 属性，用于指定具体音频地址，其中音频地址需要是 HTTPS，否则在 MIP-Cache 下会加载失败。
 
   - 示例
 
-  ```html
-  <mip-story background-audio="https://example.com/example.mp3">
-  </mip-story>
-  ```
+    ```html
+    <mip-story background-audio="https://example.com/example.mp3">
+    </mip-story>
+    ```
 
 - 段落内音频
 
-  除全局音频之外，`<mip-story>` 也支持在每个单页进行音频的播放，当用户滑动到对应段落时播放音频，离开（翻页，切换到后台）后音频停止。
+    除全局音频之外，`<mip-story>` 也支持在每个单页进行音频的播放，当用户滑动到对应段落时播放音频，离开（翻页，切换到后台）后音频停止。
 
   - 添加方式
     
@@ -219,12 +219,12 @@ layout: doc
 
   - 示例
 
-  ```html
-  <mip-story>
+    ```html
+    <mip-story>
     <mip-story-view background-audio="https://example.com/example.mp3">
     </mip-story-view>
-  </mip-story>
-  ```
+    </mip-story>
+    ```
 
 #### 2). 添加图片，视频
 
@@ -244,6 +244,8 @@ layout: doc
   </mip-story-view>
 </mip-story>
 ```
+
+[notice] 页面中使用视频时，请注意两点：一、视频不建议作为背景填充，因为在 Android 中视频播放器优先级较高会遮住页面内容，导致用户操作不能正常进行。二、视频作为每个段落内容时，不建议设置自动播放，即添加 `autoplay` 属性，因为 iOS 下的部分浏览器会直接弹出系统的视频播放器，影响用户体验。如果需要播放视频，可以暂时使用 GIF + `background-audio` 进行设置。
 
 ### 3. 添加元素动画交互
 在小故事的层（layer）中可以添加 HTML 元素来完成页面展示，在 HTML 元素中添加 `animate-in` 属性来完成指定的动画效果，例如：可以让标题从左侧滑入、文字淡入出现等。 
@@ -296,7 +298,5 @@ MIP技术包含以下：
 
 功能点 | 状态
 --- | ---
-背景音频 | 开发中
-视频支持 | 开发中
 元素动画交互 | 开发中
 示例demo | 开发中
