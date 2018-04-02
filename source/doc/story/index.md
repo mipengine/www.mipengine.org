@@ -142,6 +142,25 @@ layout: doc
             "background": "https://www.mipengine.org/static/img/mip-story/p8.png",
             "title": "第90届奥斯卡颁奖典礼回顾",
             "from": "小故事"
+        },
+        "recommend": {
+            "url": "https://www.example.com/",
+            "items": [
+                {
+                    "cover": "https://www.example.com/static/img/mip-story/p5.png",
+                    "url": "https://www.example.com/",
+                    "title": "第80届奥斯卡颁奖典礼",
+                    "from": "example",
+                    "fromUrl": "http://example.com/from"
+                },
+                {
+                    "cover": "https://www.example.com/static/img/mip-story/p5.png",
+                    "url": "https://www.example.com/",
+                    "title": "第80届奥斯卡颁奖典礼",
+                    "from": "example",
+                    "fromUrl": "http://www.example.com/from"
+                }
+            ]
         }
     }
     </script>
@@ -149,11 +168,19 @@ layout: doc
 </mip-story>
 ```
 
-- `share` - 字段下包含的是分享相关的数据
-- `share.thumbnail` - 预览小故事的缩略图地址
-- `share.background` - 结尾页背景图片地址
-- `share.title` - 小故事标题
-- `share.from` - 资源的来源信息
+- `share` - 字段下包含的是分享相关的数据。
+- `share.thumbnail` - 预览小故事的缩略图地址。
+- `share.background` - 结尾页背景图片地址。
+- `share.title` - 小故事标题。
+- `share.from` - 资源的来源信息。
+- `recommend` - 小故事推荐相关的信息。
+- `recommend.url` - 更多小故事跳转链接。
+- `recommend.items` - 推荐小故事列表，它是一个数组，包含了所有推荐的小故事数据。
+    - `cover` - 推荐的小故事背景图片。
+    - `url` - 推荐的小故事跳转地址。
+    - `title` - 推荐的小故事标题。
+    - `from` - 推荐的小故事来源信息。
+    - `fromUrl` - 推荐的小故事来源跳转地址。
 
 ## 预览效果
 
