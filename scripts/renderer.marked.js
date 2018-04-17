@@ -39,7 +39,7 @@ const TIPS_MAP = {
     },
     warning: {
         icon: 'fa-window-close',
-        text: '警告'
+        text: '警告：'
     }
 };
 
