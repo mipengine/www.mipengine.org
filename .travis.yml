@@ -1,13 +1,9 @@
 language: node_js
 node_js:
   - '4'
-
-jobs:
-  include:
-    - stage: validator
-      script:
-        - npm run lint
-        - npm run validator
-    - stage: deploy
-      if: tag =~ ^v
-      script: npm run deploy
+cache:
+  directories:
+    - node_modules
+script:
+  - npm run lint
+  - npm run validator

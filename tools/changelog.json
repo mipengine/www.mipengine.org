@@ -1,4 +1,12 @@
 [{
+    "time": "2018-04-18",
+    "type": "widget mip-fixed",
+    "title": "添加页面滑动时 mip-fixed 元素收起功能",
+    "version": "1.1.0",
+    "link": {
+        "文档": "/examples/mip-extensions/mip-fixed.html"
+    }
+},{
     "time": "2018-01-19",
     "type": "widget mip-stats-baidu",
     "title": "mip-status-baidu 百度统计组件优化",
