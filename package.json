@@ -15,9 +15,7 @@
     "prevalidator": "npm run build",
     "preinstall": "node tools/check-node-version.js",
     "postinstall": "npm run sync-components",
-    "commitmsg": "validate-commit-msg",
-    "predeploy": "npm run build",
-    "deploy": "bash tools/deploy.sh"
+    "commitmsg": "validate-commit-msg"
   },
   "config": {
     "validate-commit-msg": {
