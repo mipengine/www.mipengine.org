@@ -42,6 +42,7 @@ layout: doc
 [mip-list](/examples/mip-extensions/mip-list.html) |列表组件|可以渲染同步数据，或者异步请求数据后渲染。
 [mip-map](/examples/mip-extensions/mip-map.html) |百度地图组件|组件集成了百度地图的服务，目前支持具体位置定位、地图控件加载、marker 定位点弹窗信息定制等功能。
 [mip-nav-slidedown](/examples/mip-extensions/mip-nav-slidedown.html) |菜单|响应式菜单。
+[mip-scrollbox](/examples/mip-extensions/mip-scrollbox.html) | 横向滑动组件 | 支持自动适合屏幕宽度、栅格化（12列和两端 `17px` 边距）等特性。
 [mip-semi-fixed](/examples/mip-extensions/mip-semi-fixed.html) |滑动悬浮组件 |`position:sticky` 的 JS 兼容版本。页面元素滑动到顶部时自动贴顶。
 [mip-share](/examples/mip-extensions/mip-share.html) |分享|提供页面内分享按钮功能，默认分享当前网址。
 [mip-showmore](/examples/mip-extensions/mip-showmore.html) |显示更多|隐藏过长的文章，点击按钮显示更多内容。

@@ -121,6 +121,11 @@
   "readme": "src/mip-nav-slidedown/README.md",
   "output": "examples/mip-extensions/mip-nav-slidedown.md"
 }, {
+  "name": "mip-scrollbox",
+  "type": "extensions",
+  "readme": "src/mip-scrollbox/README.md",
+  "output": "examples/mip-extensions/mip-scrollbox.md"
+}, {
   "name": "mip-semi-fixed",
   "type": "extensions",
   "readme": "src/mip-semi-fixed/README.md",

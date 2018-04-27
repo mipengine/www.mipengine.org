@@ -1,4 +1,12 @@
 [{
+    "time": "2018-04-27",
+    "type": "widget mip-scrollbox",
+    "title": "添加横向滑动组件 mip-scrollbox",
+    "version": "1.0.0",
+    "link": {
+        "文档": "/examples/mip-extensions/mip-scrollbox.html"
+    }
+},{
     "time": "2018-04-18",
     "type": "widget mip-fixed",
     "title": "添加页面滑动时 mip-fixed 元素收起功能",
