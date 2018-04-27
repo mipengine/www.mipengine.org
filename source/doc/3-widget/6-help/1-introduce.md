@@ -4,11 +4,12 @@ layout: doc
 
 `mip.js` 内置了一些开发工具和模块，使用原生 JS 实现通用的函数。这些函数不能直接在页面`<script>`标签中使用，但在[开发MIP组件](https://www.mipengine.org/doc/2-tech/4-mip-widget.html)时可以在组件 JS 中引用。
 
-本文包含三个部分：
+本文包含四个部分：
 
 1. 替代jquery、zepto
 2. viewport帮助
 3. jquery、zepto引入
+4. 组件提前渲染
 
 ## 1. 替代 jquery、zepto
 
@@ -396,5 +397,14 @@ define(function (require) {
 
 ```
 
+## 4、组件提前渲染 prerenderElement
 
+提前渲染 MIP 组件。
+
+如果元素不在 viewport 内，强制触发元素的 viewportCallback firstInviewCallback 方法。
+
+```
+var element = document.getElementById('mip-test');
+MIP.prerenderElement(element);
+```
 

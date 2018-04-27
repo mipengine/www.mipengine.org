@@ -16,8 +16,8 @@ doc:
     组件布局: /doc/3-widget/11-widget-layout.html
   工具接口:
     开发辅助工具和模块: /doc/3-widget/6-help/1-introduce.html
+    事件通信: /doc/3-widget/6-help/3-mip-normal.html
     手势: /doc/3-widget/6-help/2-gesture.html
-    其它: /doc/3-widget/6-help/3-mip-normal.html
     动画: /doc/3-widget/6-help/4-mip-animate.html
     template 模板: /doc/3-widget/6-help/5-template.html
     存储: /doc/3-widget/6-help/6-storage.html
