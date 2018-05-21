@@ -1,5 +1,5 @@
 title: 开发小故事
-layout: doc
+layout: examples
 ---
 
 ## 小故事是什么？

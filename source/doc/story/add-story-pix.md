@@ -1,8 +1,6 @@
-title: 创建小故事-小故事添加统计
-layout: doc
+title: 为小故事添加页面统计
+layout: examples
 ---
-
-## 小故事添加统计
 
 ## 知识储备
 
@@ -10,55 +8,61 @@ layout: doc
 
 ## 添加统计
 
-​	在完成一个小故事的开发以后，有时候我们需要对整个小故事的用户行为进行监控，因此需要使用统计组件，来进行统计，我们这里提供了两个组件便于用户使用。
+​	完成了一个小故事开发之后，在正式对外发布之前，我们需要对整个小故事页面添加一些统计埋点，以便我们可以获取到访问小故事页面的用户行为。在这里我们需要引入统计组件来进行统计。
 
-- PV 使用 mip-pix 组件统计
+### 统计页面访问PV
 
-  `mip-pix`组件本身在页面不可见，但本元素只有滚动到屏幕可见范围内才触发初始化;
+我们可以使用 `mip-pix`组件来统计页面访问PV；
 
-  - 示例
+`mip-pix`组件本身在页面不可见，但本元素只有滚动到屏幕可见范围内才触发初始化;
 
-    ```html
-    <mip-pix src="https://www.mipengine.org/a.gif"></mip-pix>
-    ```
+- 示例
 
-  详细的使用介绍可点击查看[mip-pix 组件](https://www.mipengine.org/examples/mip/mip-pix.html)
+```html
+<mip-pix src="https://www.mipengine.org/a.gif"></mip-pix>
+```
 
-- 交互行为日志使用 [mip-stats-baidu 组件统计](https://github.com/mipengine/mip-extensions/tree/master/src/mip-stats-baidu)
+可以点击[mip-pix 组件](https://www.mipengine.org/examples/mip/mip-pix.html)了解更多使用信息。
 
-  - 示例
+### 统计用户的交互行为
 
-    ```html
-    <mip-stats-baidu>
-        <script type="application/json">
-            {
-                "token": "02890d4a309827eb62bc3335b2b28f7f",
-                "_setCustomVar": [1, "login", "1", 2],
-                "_setAutoPageview": [true]
-            }
-        </script>
-    </mip-stats-baidu>
-    ```
+- 使用 `mip-stats-baidu` 组件统计用户的交互行为
 
-完成了统计添加，我们已经完成了一个小故事的整个开发，但是鉴于小故事是属于特殊的MIP页，因此小故事也要经过MIP页面校验，只有符合MIP页面规范的小故事才可以最终在搜索结果页展现。
+```html
+<mip-stats-baidu>
+    <script type="application/json">
+        {
+            "token": "02890d4a309827eb62bc3335b2b28f7f",
+            "_setCustomVar": [1, "login", "1", 2],
+            "_setAutoPageview": [true]
+        }
+    </script>
+</mip-stats-baidu>
+```
 
+可以点击[ `mip-stats-baidu` 组件](https://www.mipengine.org/examples/mip-extensions/mip-stats-baidu.html)介绍了解更多使用信息。
 
-## 小故事开发教程系列
+完成了统计添加，我们已经完成了一个小故事的整个开发。你可以把你的小故事页面放到你的服务器上让大家浏览了。
 
-[第一篇、开发小故事前期准备](https://www.mipengine.org/doc/story/add-stroy-before.html)
-
-[第二篇、小故事的组织结构](https://www.mipengine.org/doc/story/story-organization-structure.html)
-
-[第三篇、创建小故事的封面](https://www.mipengine.org/doc/story/add-stroy-cover.html)
-
-[第四篇、开发更丰富的小故事段落](https://www.mipengine.org/doc/story/add-story-section.html)
-
-[第五篇、小故事内置动画](https://www.mipengine.org/doc/story/add-story-animation.html)
-
-[第六篇、创建小故事的封底页面](https://www.mipengine.org/doc/story/add-story-end.html)
-
-[第七篇、小故事的添加统计](https://www.mipengine.org/doc/story/add-story-pix.html)
-
-[第八篇、小故事的MIP规范校验](https://www.mipengine.org/doc/story/add-stroy-validate.html)
+接下来，如果你希望你的小故事页面可以被提交到搜索并被搜索缓存，那么你需要完成[小故事页面的代码规范校验](https://www.mipengine.org/doc/story/add-stroy-validate.html)。
 
 
+## 小故事开发系列教程
+
+[一、开发小故事前期准备](https://www.mipengine.org/doc/story/add-story-before.html)
+
+[二、小故事的组织结构](https://www.mipengine.org/doc/story/story-organization-structure.html)
+
+[三、为小故事创建一个封面](https://www.mipengine.org/doc/story/add-story-cover.html)
+
+[四、为小故事添加更多的内容段落](https://www.mipengine.org/doc/story/add-story-section.html)
+
+[五、为小故事段落中的元素添加交互动画](https://www.mipengine.org/doc/story/add-story-animation.html)
+
+[六、为小故事添加背景音乐](https://www.mipengine.org/doc/story/add-story-music.html)
+
+[七、为小故事添加封底页面](https://www.mipengine.org/doc/story/add-story-end.html)
+
+[八、为小故事添加页面统计](https://www.mipengine.org/doc/story/add-story-pix.html)
+
+[九、对小故事进行页面代码规范校验](https://www.mipengine.org/doc/story/add-story-validate.html)
