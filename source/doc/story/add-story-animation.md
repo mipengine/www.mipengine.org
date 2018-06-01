@@ -4,21 +4,25 @@ layout: examples
 
 ## 知识储备
 
-​	在阅读本篇前，您需要了解什么小故事，如果您还不了解什么是小故事，可以查看[开发小故事前期准备](https://www.mipengine.org/doc/story/create1.html)、[小故事的组织结构](https://www.mipengine.org/doc/story/create2.html)、[创建小故事的封面](https://www.mipengine.org/doc/story/create3.html)了解基础信息；
+​​&emsp;&emsp;在阅读本篇前，您需要了解什么是小故事，可以查看[开发小故事前期准备](/doc/story/add-story-before.html)、[小故事的组织结构](/doc/story/story-organization-structure.html)、[创建小故事的封面](/doc/story/add-story-cover.html)了解基础信息；
 
 ## 使用小故事内置动画
 
-为了小故事页面更生动，你可以为页面上的元素添加一些入场动画。比如：
+​​&emsp;&emsp;为了小故事页面更生动，您可以为页面上的元素添加一些入场动画。
 
-<img src="http://mipstatic.baidu.com/static/mip-static/mip-story/demo/static/animation3.gif" width="276" height="494" />
+- 示例：
 
-这里我们为你封装好了一些常用的动画类型，你可以直接按照下面描述的方法直接使用；
+<div align=center>
+    <img src="http://mipstatic.baidu.com/static/mip-static/mip-story/demo/static/animation3.gif" width="276" height="494" />
+</div>
+
+​​&emsp;&emsp;`mip-story`组件中已封装好了一些常用的动画类型，您可以按照下面描述的方法使用；
 
 ### 小故事内置的动画
 
 #### 基本用法
 
-  通过给页面元素添加 `animate-in` 属性来进行入场元素动画的设置；
+​​&emsp;&emsp;通过给页面元素添加 `animate-in` 属性来进行入场元素动画的设置；
 
 ```html
 <style mip-custom>
@@ -63,13 +67,17 @@ layout: examples
 | `rotate-in-left`  | 700        | 左侧旋转飞入 |
 | `rotate-in-right` | 700        | 右侧旋转飞入 |
 
-各种动画的交互示意如下图所示
 
-<img src="http://mipstatic.baidu.com/static/mip-static/mip-story/demo/static/%E5%B0%8F%E6%95%85%E4%BA%8B%E5%86%85%E7%BD%AE%E5%8A%A8%E7%94%BB.gif" width="276" height="494" />
+- 示例：
+
+<div align=center>
+    <img src="http://mipstatic.baidu.com/static/mip-static/mip-story/demo/static/%E5%B0%8F%E6%95%85%E4%BA%8B%E5%86%85%E7%BD%AE%E5%8A%A8%E7%94%BB.gif" width="276" height="494" />
+</div>
+
 
 #### 动画的高级属性
 
-在设置了上述`animate-in` 属性的配置后，元素就可以动起来了。同时我们还支持一些其他的动画配置，用于动画的细节调整，入场动画还支持的配置项如下：
+​​&emsp;&emsp;在设置了上述`animate-in` 属性的配置后，元素可实现相关的动画。同时我们还支持一些其他的动画配置，用于动画的细节调整，入场动画还支持的配置项如下：
 
 - **`animate-in-delay`：延迟**
   - 这是延迟启动动画的时间量。例如，.3s的延迟表示动画在.3秒后进入页面。延迟0s立即开始动画。
@@ -84,22 +92,23 @@ layout: examples
   - 是否必填：否
   - 取值：带有动画元素的id
 
-您可以通过更改`animate-in-delay`、`animate-in-duration`和`animate-in-after` 属性的延迟或持续时间来自定义动画的时间。
+​​&emsp;&emsp;您可以通过更改`animate-in-delay`、`animate-in-duration`和`animate-in-after` 这些属性的值来调节动画的细节。
 
 - 示例
 
 ```html
 <mip-story-layer>
-      <!-- 以fade-in的形式入场，动画时间持续1000ms, 动画开始前延迟1000ms-->
+    <!-- 以fade-in的形式入场，动画时间持续1000ms, 动画开始前延迟1000ms-->
     <h1 animate-in="fade-in" animate-in-duration="1000" animate-in-delay="1000"  id="first-animate">最佳影片</h1>
-      <!--在id为 first-animate 的元素动画动画结束之后开始执行-->
+
+    <!--在id为 first-animate 的元素动画动画结束之后开始执行-->
     <p animate-in="fly-in-left" animate-in-after="first-animate">钢铁侠是一部非常好的科幻片。</p>
 </mip-story-layer>
 ```
 
 ### 动画的使用案例
 
-我们可以通过以下代码实现一个静态页面。
+​​&emsp;&emsp;首先可通过以下代码实现一个静态页面。
 
 ```html
 <mip-story-view>
@@ -122,14 +131,13 @@ layout: examples
 </mip-story-view>
 ```
 
-在浏览器中可以看到如下页面：
+- 示例：
 
+<div align=center>
+    <img src="http://mipstatic.baidu.com/static/mip-static/mip-story/demo/static/animation-0.png" width="276" height="494" />
+</div>
 
-<img src="http://mipstatic.baidu.com/static/mip-static/mip-story/demo/static/animation-0.png" width="276" height="494" />
-
-如果在此基础上添加动画，那么将使得页面更加生动。
-
-​	我们将首先制作文本的入口动画，并在页面右侧显示“fade-in”。像这样添加`animate-in="fade-in"`到`<span>`元素：
+​​&emsp;&emsp;在此基础上添加动画，为了使得页面生动，可以添加动画效果。首先制作文本的入口动画，使其在页面中展现淡入的动画效果，像这样添加`animate-in="fade-in"`到`<span>`元素：
 
 ```html
 <mip-story-view>
@@ -152,7 +160,7 @@ layout: examples
 </mip-story-view>
 ```
 
-​	接下来，我们给每个图片添加动画。
+​​&emsp;&emsp;接下来，给每个图片添加动画。
 
 ```html
 <mip-story-view>
@@ -174,17 +182,18 @@ layout: examples
     </mip-story-layer>
 </mip-story-view>
 ```
+- 示例：
 
-
-<img src="http://mipstatic.baidu.com/static/mip-static/mip-story/demo/static/animation3.gif" width="276" height="494" />
-
-
+<div align=center>
+    <img src="http://mipstatic.baidu.com/static/mip-static/mip-story/demo/static/animation3.gif" width="276" height="494" />
+</div>
 
 ## 使用css动画
 
-当然，内置的动画在某些场景下无法完全满足需求，真对此，我们也兼容传统的css aniamtion属性动画，你可以在页面中`<style mip-custom></style>` 中定义你的css animation, 并在你的元素中使用他；
+​​&emsp;&emsp;当然，内置的动画在某些场景下无法完全满足需求，因此，我们也兼容传统的css aniamtion属性动画，您可以在页面中`<style mip-custom></style>` 中定义您的css animation, 并在元素中使用；
 
-notice:  由于customElement在IOS 11.3上的css animation 存在些兼容性问题，直接使用css动画可能会导致部分情况下动画第一帧丢失，这个问题我们正在解决中。你可以通过显示的为`mip-story`组件声明`display`属性来避免这个问题；
+[notice] 由于customElement在IOS 11.3上的css animation 存在些兼容性问题，直接使用css动画可能会导致部分情况下动画第一帧丢失，这个问题我们正在解决中。您可以通过显示的为`mip-story`组件声明`display`属性来避免这个问题；
+
 
 ```html
 <!DOCTYPE html>
@@ -216,27 +225,28 @@ notice:  由于customElement在IOS 11.3上的css animation 存在些兼容性问
 </html>
 ```
 
+上一节：[为小故事添加更多的内容段落](/doc/story/add-story-section.html)。
 
-
+下一节：[为小故事添加背景音乐](/doc/story/add-story-music.html)。
 
 
 ## 小故事开发系列教程
 
-[一、开发小故事前期准备](https://www.mipengine.org/doc/story/add-story-before.html)
+[一、开发小故事前期准备](/doc/story/add-story-before.html)
 
-[二、小故事的组织结构](https://www.mipengine.org/doc/story/story-organization-structure.html)
+[二、小故事的组织结构](/doc/story/story-organization-structure.html)
 
-[三、为小故事创建一个封面](https://www.mipengine.org/doc/story/add-story-cover.html)
+[三、为小故事创建一个封面](/doc/story/add-story-cover.html)
 
-[四、为小故事添加更多的内容段落](https://www.mipengine.org/doc/story/add-story-section.html)
+[四、为小故事添加更多的内容段落](/doc/story/add-story-section.html)
 
-[五、为小故事段落中的元素添加交互动画](https://www.mipengine.org/doc/story/add-story-animation.html)
+[五、为小故事段落中的元素添加交互动画](/doc/story/add-story-animation.html)
 
-[六、为小故事添加背景音乐](https://www.mipengine.org/doc/story/add-story-music.html)
+[六、为小故事添加背景音乐](/doc/story/add-story-music.html)
 
-[七、为小故事添加封底页面](https://www.mipengine.org/doc/story/add-story-end.html)
+[七、为小故事添加封底页面](/doc/story/add-story-end.html)
 
-[八、为小故事添加页面统计](https://www.mipengine.org/doc/story/add-story-pix.html)
+[八、为小故事添加页面统计](/doc/story/add-story-pix.html)
 
-[九、对小故事进行页面代码规范校验](https://www.mipengine.org/doc/story/add-story-validate.html)
+[九、对小故事进行页面代码规范校验](/doc/story/add-story-validate.html)
 
