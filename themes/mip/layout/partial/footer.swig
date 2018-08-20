@@ -13,7 +13,7 @@
 </mip-fixed>
 
 <mip-stats-baidu token="4e397f684261b9e4ff9d8ad4714f5b2b"></mip-stats-baidu>
-<script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+<script src="https://c.mipcdn.com/static/v2/mip.js"></script>
 <script src="https://c.mipcdn.com/static/v1/mip-sidebar/mip-sidebar.js"></script>
 <script src="https://c.mipcdn.com/static/v1/mip-stats-baidu/mip-stats-baidu.js"></script>
 <script src="https://c.mipcdn.com/static/v1/mip-gototop/mip-gototop.js"></script>
