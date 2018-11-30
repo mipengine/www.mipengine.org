@@ -25,6 +25,10 @@
     <link rel=icon href="https://www.mipengine.org/favicon.ico">
     {% block style %}
     {% endblock style %}
+    <script async src="https://c.mipcdn.com/static/v2/mip.js"></script>
+    <script async src="https://c.mipcdn.com/static/v1/mip-sidebar/mip-sidebar.js"></script>
+    <script async src="https://c.mipcdn.com/static/v1/mip-stats-baidu/mip-stats-baidu.js"></script>
+    <script async src="https://c.mipcdn.com/static/v1/mip-gototop/mip-gototop.js"></script>
     <noscript>
         <style mip-officialrelease>
             body {
