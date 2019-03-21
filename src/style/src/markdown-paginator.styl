@@ -1,0 +1,116 @@
+.markdown-paginator
+  display flex
+  margin-top 24px
+  margin-bottom 48px
+  &-item
+    flex 1
+    padding-top 5px
+    padding-bottom 5px
+    display block
+    &:active
+      background #f4f4f4
+    &.empty
+      &:active,
+      &:hover
+        background #fff
+        cursor default
+    &:first-child
+      padding-left 1em
+      text-align left
+      .title
+        &:before
+          left -.75em
+          border-left-color transparent
+          border-right-color #333
+
+    &:last-child
+      padding-right 1em
+      text-align right
+
+      .title
+        &:before
+          right -.75em
+          border-left-color #333
+          border-right-color transparent
+
+    @media screen and (min-width: 768px)
+      &:hover
+        background #f4f4f4
+        cursor pointer
+
+    .label
+      font-size 12px
+      line-height 1.2
+      color #999
+      margin-bottom 10px
+      &:before,
+      &:after
+        content ''
+        display none
+        position absolute
+        width 0
+        height 0
+        // background #24292e
+        top 50%
+        transform translateY(-50%)
+        border-width .25em
+        border-style solid
+        border-top-color transparent
+        border-bottom-color transparent
+
+    .title
+      position relative
+      font-size 20px
+      &:before
+        content ''
+        display block
+        position absolute
+        width 0
+        height 0
+        // background #24292e
+        top 50%
+        transform translateY(-50%)
+        border-width .25em
+        border-style solid
+        border-top-color transparent
+        border-bottom-color transparent
+        // border-left-color transparent
+        // border-right-color #24292e
+        // border-color #24292e
+
+@media screen and (max-width: 768px)
+  .markdown-paginator
+    display block
+    margin 0
+    &-item
+      &:first-child,
+      &:last-child
+        padding 30px 0
+        text-align center
+        .label
+          display inline-block
+          margin 0 auto
+          position relative
+        .title
+          &:before,
+          &:after
+            display none
+      &:first-child
+        border-bottom 1px solid #eee
+        .label
+          &:before
+            display block
+            left -.75em
+            border-left-color transparent
+            border-right-color #999
+      &:last-child
+        .label
+          &:after
+            display block
+            right -.75em
+            border-left-color #999
+            border-right-color transparent
+      &.hide-in-small
+        display none
+
+

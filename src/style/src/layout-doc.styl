@@ -1,0 +1,77 @@
+// .layout-sidebar,
+// .layout-main-content
+    // float left
+    // margin-top 64px
+
+// .layout-side-bar
+//     width 30%
+mip-sidenav
+  .sidenav-wrapper
+    .l-0
+      & > div > .sub-folder
+          font-size 18px
+      & > a
+        font-size 18px !important
+      &:first-child
+        // & > div > .sub-folder,
+        & > a
+          padding-top 30px !important
+
+    .wd-infinity-menu
+      div[class^="l-"]
+        a
+          color #555
+      .l-0
+        .folder
+          font-weight bold
+    .wd-infinity-chapters
+      div.children-0
+        .chapter-title
+          color #000
+      div.children-1
+        .chapter-title
+          color #555
+          & > div
+            padding-left 42px
+            &:before
+              left 32px
+          &.selected > div
+            font-weight normal
+
+.nav-sidebar
+  .navbar-menu-wrapper
+    .navbar-item
+      .menu-name
+        line-height 48px
+      &:first-child
+        margin-top -15px
+
+.layout-main-content
+  // width 60%
+  margin-left 360px
+  margin-top 64px
+  padding-left 50px
+  padding-right 100px
+  // max-width 1000px
+  .content-wrapper
+    max-width 1000px
+    margin 0 auto
+    padding-top 60px
+    &:before
+      content "."
+      display block
+      height 0
+      clear both
+      visibility hidden
+
+  @media screen and (max-width: 1200px)
+    margin-left 275px
+    padding-left 25px
+    padding-right 25px
+
+  @media screen and (max-width: 768px)
+    width auto
+    margin-left 0
+    padding-left 17px
+    padding-right 17px
+    margin-top 44px

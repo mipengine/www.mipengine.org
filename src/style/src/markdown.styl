@@ -1,0 +1,209 @@
+@import './github-markdown.css'
+@import './highlight.css'
+
+.markdown-body pre
+  padding-left: 3em
+  position: relative
+
+.markdown-body .code-index
+  position absolute
+  left 0
+  width 2em
+  text-align right
+  // line-height 1.5
+  color rgba(27, 31, 35, .3)
+
+
+.markdown-body
+  h1:before,
+  h2:before,
+  h3:before,
+  h4:before,
+  h5:before,
+  h6:before
+    content: ' '
+    display block
+    height 84px
+    margin-top -84px
+    visibility hidden
+
+.markdown-body
+  .md-p-info,
+  .md-p-notice,
+  .md-p-warn
+    padding 1em 1em 1em 3em
+    position relative
+    margin-bottom 20px
+  .md-p-info
+    background #e6fcf5
+    color #099268
+    // border 1px solid #e0f1e9
+  .md-p-notice
+    background #fff9da
+    color #333
+    // border 1px solid #eae5d6
+  .md-p-warn
+    background #fff5f5
+    color #e03131
+    // border 1px solid #decbcb
+  .iconfont
+    position absolute
+    top 1em
+    left 1em
+
+  .md-table-wrapper
+    overflow auto
+
+  .md-component-preview-wrapper
+    // margin 30px 0
+    display flex
+
+    .md-component-preview
+      width 280px
+      // margin-top 30px
+      border 1px solid #eee
+      // box-shadow 0 1px 2px rgba(0, 0, 0, .3)
+
+    .md-component-code-wrapper
+      flex 1
+      overflow auto
+      margin-left 20px
+
+      .md-component-code-box
+        height 497px
+        overflow auto
+        &>pre
+          margin 0
+          min-height 497px
+
+    @media screen and (max-width: 620px)
+      display block
+      .md-component-preview
+        width auto
+      // width auto !important
+      // background #112233
+      // background #112233
+      // width auto !important
+
+      // in 0 auto
+
+      .md-component-code-wrapper
+        margin-left 0
+        margin-top 20px
+        .md-component-code-box
+          height auto
+
+          &>pre
+            min-height auto
+
+  .md-component-toolbar
+    height 30px
+    line-height 30px
+    font-size 14px
+    text-align right
+
+    .md-component-link
+      margin-left 16px
+
+    .md-component-link-edit
+      @media screen and (max-width: 768px)
+        display none
+  // .md-fn-wrapper
+  //   .md-fn-title,
+  //   .md-fn-preview-toggle
+  //     height 46px
+  //     line-height 44px
+  //     border 1px solid #eee
+  //     display block !important
+  //     text-align center
+  //   .md-fn-title-right
+  //     text-align right
+  //   .md-fn-link
+  //     margin-right 20px
+
+  //   .md-fn-preview-section,
+  //   .md-fn-code-section
+  //     padding 20px
+  //     border 1px solid #eee
+  //   .md-fn-preview-section
+  //     border-top none
+  //     border-bottom none
+  //     background #eee
+  //   .md-fn-code-section
+  //     border-top none
+  //   .md-fn-preview-toggle
+  //     width 375px
+  //     box-shadow 0 1px 2px rgba(0, 0, 0, .3)
+  //     border none
+  //     background #555
+  //     color #fff
+  //     margin 0 auto
+  //   .md-fn-code-title
+  //     user-select none
+  //     &:hover
+  //       color #3388ff
+  //       cursor pointer
+
+  //   mip-showmore
+  //     font-size 0
+  //     width 375px
+  //     box-shadow 0 1px 2px rgba(0, 0, 0, .3)
+  //     margin 0 auto
+  //     background #fff
+
+  .md-img-wrapper
+    display block
+    margin-top 20px
+
+    &-child
+      display block
+
+  @media screen and (max-width: 768px)
+    .md-fn-wrapper
+      mip-showmore
+        width auto
+      .md-fn-preview-toggle
+        width auto
+
+  // mip-iframe
+    // border 1px solid #dcdcdc
+    // background #dcdcdc
+    // border 10px solid #dcdcdc
+    // border-radius 10px
+
+  @media screen and (min-width: 992px)
+    .md-img-wrapper-child
+      width 70%
+      &:hover
+        cursor pointer
+
+  @media screen and (min-width: 768px)
+    .md-img-wrapper-child
+      width 60%
+  // .md-img-wrapper
+  //   display flex
+// @import './github-markdown-original.css'
+
+// .markdown-body
+//   h1
+//     font-size 24px
+//     line-height 26px
+//     margin-bottom 32px
+//   h2
+//     font-size 20px
+//     line-height 22px
+//     margin-top 20px
+//     margin-bottom 20px
+//   h3
+//     font-size 18px
+//     line-height 20px
+//     margin-top 20px
+//     margin-bottom 20px
+
+//   h1, h2, h3, h4, h5, h6
+//     & + *
+//       margin-top 0
+//   p
+//     font-size 16px
+//     line-height 24px
+//     margin-bottom 16px

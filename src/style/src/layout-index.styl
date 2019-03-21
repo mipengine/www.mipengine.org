@@ -1,0 +1,467 @@
+.home-wrapper
+    .container
+        margin 0 auto
+        @media screen and (max-width: 768px)
+            text-align center
+
+    .top-section
+        background #fff
+        color #000
+        padding-top 44px
+        // height 520px
+        box-sizing border-box
+        @media screen and (max-width: 768px)
+            height auto
+        .container
+            background url('https://bos.nj.bpc.baidu.com/assets/mip/miporg/mip-banner.png') no-repeat 100% 60px
+            background-size 60% auto
+            padding-bottom 165px
+            @media screen and (max-width: 768px)
+                background none
+                padding-bottom 0
+                .top-text
+                    &::after
+                        content: ''
+                        display block
+                        height 0
+                        padding-bottom 58.4%
+                        background url('https://bos.nj.bpc.baidu.com/assets/mip/miporg/mip-banner.png') no-repeat center 100%
+                        background-size cover
+                        margin-top 44px
+            h1
+                padding-top 128px
+                font-size 42px
+                font-weight bold
+                @media screen and (max-width: 768px)
+                    font-size 40px
+                    line-height 1
+                    padding-top 54px
+
+            p
+                font-size 16px
+                line-height 28px
+                margin 20px 0 32px 0
+                @media screen and (max-width: 768px)
+                    font-size 16px
+                    line-height 32px
+                    margin 22px 0 31px 0
+
+            .top-buttons
+                user-select none
+                a
+                    font-size 16px
+                    display inline-block
+                    line-height 38px
+                    border 1px solid #000
+                    border-radius 20px
+                    text-align center
+                    width 150px
+                    @media screen and (max-width: 768px)
+                        width 130px
+                .top-btn
+                    &-start
+                        background #000
+                        color #fff
+                        &:active
+                            background #333
+                        @media screen and (min-width: 768px)
+                          &:hover
+                              background #333
+                    &-github
+                        background #fff
+                        color #000
+                        margin-left 10px
+                        &:active
+                            background #f4f4f4
+                        @media screen and (min-width: 768px)
+                          &:hover
+                              background #f4f4f4
+
+    .intro-section
+        background #fff
+        text-align center
+        padding-bottom 90px
+        @media screen and (max-width: 768px)
+          padding-bottom 0
+        .container
+            h1
+                font-size 30px
+                font-weight bold
+                line-height 40px
+                @media screen and (max-width: 768px)
+                    font-size 30px
+                    margin-top 85px
+            >p
+                color #999
+                letter-spacing 5px
+                margin 10px 0 45px 0
+                padding 0 31px
+
+            .mip-parts
+                display box             /* OLD - Android 4.4- */
+                display -webkit-box      /* OLD - iOS 6-, Safari 3.1-6 */
+                display -moz-box        /* OLD - Firefox 19- (buggy but mostly works) */
+                display -ms-flexbox      /* TWEENER - IE 10 */
+                display -webkit-flex     /* NEW - Chrome */
+                display flex             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+                border 1px solid #ededed
+                @media screen and (max-width: 768px)
+                    display block
+                    border none
+                >a
+                    -webkit-box-flex 1      /* OLD - iOS 6-, Safari 3.1-6 */
+                    -moz-box-flex 1         /* OLD - Firefox 19- */
+                    // width 20%              /* For old syntax, otherwise collapses. */
+                    -webkit-flex 1          /* Chrome */
+                    -ms-flex 1              /* IE 10 */
+                    flex 1                 /* NEW, Spec - Opera 12.1, Firefox 20+ */
+                    // cursor auto
+                    display inline-block
+                    height 370px
+                    padding 0 34px
+                    background-size auto 100px !important
+                    background-repeat no-repeat
+                    background-position center 70px
+
+                    &:before
+                        content ''
+                        display none
+
+                    @media screen and (max-width: 768px)
+                        flex none
+                        width 100%
+                        height auto
+                        box-sizing border-box
+                        text-align left
+                        padding 0 34px 76px 146px
+                        background-position 30px 78px !important
+                        background-size 80px auto !important
+                        border-top 1px solid #ededed
+
+                    &.mip-parts-html
+                        &:before
+                            background-image url('https://boscdn.baidu.com/assets/mip/img/mip-1-80b3f1ab.gif')
+                        background-image url('https://boscdn.baidu.com/assets/mip/img/mip-1-80b3f1ab.gif')
+                        @media screen and (min-width: 768px)
+                            background-image url('https://boscdn.baidu.com/assets/mip/img/mip-1-f5e0f7e5.png')
+                            &:hover
+                                background-image url('https://boscdn.baidu.com/assets/mip/img/mip-1-80b3f1ab.gif')
+
+                    &.mip-parts-js
+                        &:before
+                            background-image url('https://boscdn.baidu.com/assets/mip/img/mip-2-774f78a1.gif')
+                        background-image url('https://boscdn.baidu.com/assets/mip/img/mip-2-774f78a1.gif')
+                        @media screen and (min-width: 768px)
+                            background-image url('https://boscdn.baidu.com/assets/mip/img/mip-2-6914cbcd.png')
+                            &:hover
+                               background-image url('https://boscdn.baidu.com/assets/mip/img/mip-2-774f78a1.gif')
+
+                    &.mip-parts-cache
+                        &:before
+                            background-image url('https://boscdn.baidu.com/assets/mip/img/mip-3-b2d7b21e.gif')
+                        background-image url('https://boscdn.baidu.com/assets/mip/img/mip-3-b2d7b21e.gif')
+                        @media screen and (min-width: 768px)
+                            background-image url('https://boscdn.baidu.com/assets/mip/img/mip-3-3eee0c77.png')
+                            &:hover
+                               background-image url('https://boscdn.baidu.com/assets/mip/img/mip-3-b2d7b21e.gif')
+
+                    &:not(:last-child)
+                        border-right 1px solid #ededed
+                        @media screen and (max-width: 768px)
+                            border-right none
+
+                    h2
+                        font-size 24px
+                        color #000
+                        font-weight 200
+                        line-height 1
+                        margin 215px 0 25px 0
+                        @media screen and (max-width: 768px)
+                            margin 75px 0 15px 0
+
+                    p
+                        font-size 16px
+                        line-height 26px
+                        color #555
+
+    .advantage-section
+        background-color #fbfbfb
+        // background-color gray
+        padding-bottom 90px
+        @media screen and (max-width: 768px)
+            padding-bottom 70px
+        .container
+            // .preload-img
+            //     height 0
+            //     width 0
+            //     // display none
+            //     &-1
+            //         background-image url('https://boscdn.baidu.com/assets/mip/img/11.gif')
+            //     &-2
+            //         background-image url('https://boscdn.baidu.com/assets/mip/img/22.gif')
+            //     &-3
+            //         background-image url('https://boscdn.baidu.com/assets/mip/img/33.gif')
+            //     &-4
+            //         background-image url('https://boscdn.baidu.com/assets/mip/img/44.gif')
+            //     &-5
+            //         background-image url('https://boscdn.baidu.com/assets/mip/img/mip-1.gif')
+            //     &-6
+            //         background-image url('https://boscdn.baidu.com/assets/mip/img/mip-2.gif')
+            //     &-7
+            //         background-image url('https://boscdn.baidu.com/assets/mip/img/mip-3.gif')
+            h1
+                padding-top 85px
+                font-size 30px
+                color #000
+                line-height 40px
+                font-weight bold
+                text-align center
+
+            >p
+                color #999
+                letter-spacing 5px
+                margin 10px 0 60px 0
+                padding 0 31px
+                text-align center
+            .mip-advan-section
+                display box             /* OLD - Android 4.4- */
+                display -webkit-box      /* OLD - iOS 6-, Safari 3.1-6 */
+                display -moz-box        /* OLD - Firefox 19- (buggy but mostly works) */
+                display -ms-flexbox      /* TWEENER - IE 10 */
+                display -webkit-flex     /* NEW - Chrome */
+                display flex
+                margin-bottom 40px
+                &:last-child
+                  margin-bottom 0
+                @media screen and (max-width: 768px)
+                    display block
+                    margin-bottom 0
+                >div
+                    -webkit-box-flex 1      /* OLD - iOS 6-, Safari 3.1-6 */
+                    -moz-box-flex 1         /* OLD - Firefox 19- */
+                    // width 20%              /* For old syntax, otherwise collapses. */
+                    -webkit-flex 1          /* Chrome */
+                    -ms-flex 1              /* IE 10 */
+                    flex 1                 /* NEW, Spec - Opera 12.1, Firefox 20+ */
+                    position relative
+                    background #fff
+                    box-sizing border-box
+                    border 1px solid #f1f1f1
+                    box-shadow 0px 0px 1px 1px transparent
+                    height 310px
+                    padding 60px 60px 60px 60px
+
+                    &:hover
+                      box-shadow 0px 0px 1px 1px rgba(0,0,0,.04)
+                    h2
+                        font-size 24px
+                        font-weight bold
+                        color #000
+                        line-height 1
+                        margin-bottom 16px
+                    p
+                        font-size 16px
+                        line-height 26px
+                        color #555
+                    &:first-child
+                        margin-right 20px
+
+                    @media screen and (max-width: 768px)
+                        -webkit-box-flex none      /* OLD - iOS 6-, Safari 3.1-6 */
+                        -moz-box-flex none        /* OLD - Firefox 19- */
+                        // width 20%              /* For old syntax, otherwise collapses. */
+                        -webkit-flex none         /* Chrome */
+                        -ms-flex none             /* IE 10 */
+                        flex none
+                        text-align left
+                        height 276px
+                        margin 0 17px 20px 17px
+                        padding 40px 21px 40px 30px
+
+                    .mip-advan-section-button
+                        position absolute
+                        bottom 45px
+                        left 60px
+                        font-size 14px
+                        color #555
+                        display inline-block
+                        line-height 40px
+                        border 1px solid #999
+                        border-radius 20px
+                        text-align center
+                        width 150px
+                        .arrow
+                            width 0
+                            height 0
+                            display inline-block
+                            // verticals-align middle
+                            border-width 3px
+                            border-top-color transparent
+                            border-bottom-color transparent
+                            border-right-color transparent
+                            border-left-color #555
+                            border-style solid
+                            margin 0 0 3px 7px
+                            transform translateY(25%)
+
+                        &:active
+                            background #f4f4f4
+                        @media screen and (max-width: 768px)
+                            bottom 40px
+                            left 30px
+                            width 119px
+                        @media screen and (min-width: 768px)
+                            &:hover
+                               background #f4f4f4
+                    .mip-advan-section-img
+                        width 90px
+                        height 90px
+                        position absolute
+                        right 60px
+                        bottom 45px
+                        background-repeat no-repeat
+                        background-size 100% 100%
+                        transition background-image .08s
+                        @media screen and (max-width: 768px)
+                          width 75px
+                          height 75px
+
+                        &:before
+                          content ''
+                          display none
+                        &.advan-1
+                            &:before
+                                background-image url('https://boscdn.baidu.com/assets/mip/img/11-7c872fd6.gif')
+                            background-image url('https://boscdn.baidu.com/assets/mip/img/11-7c872fd6.gif')
+                            @media screen and (min-width: 768px)
+                                background-image url('https://boscdn.baidu.com/assets/mip/img/11-16937af0.png')
+                                // transition background-image .08s ease
+                        &.advan-2
+                            &:before
+                                background-image url('https://boscdn.baidu.com/assets/mip/img/22-ec1c9a3c.gif')
+                            background-image url('https://boscdn.baidu.com/assets/mip/img/22-ec1c9a3c.gif')
+                            @media screen and (min-width: 768px)
+                                background-image url('https://boscdn.baidu.com/assets/mip/img/22-e3345f29.png')
+                                transition background-image .08s ease
+                        &.advan-3
+                            // width 100px
+                            // height 100px
+                            &:before
+                                background-image url('https://boscdn.baidu.com/assets/mip/img/33-5f943e59.gif')
+                            background-image url('https://boscdn.baidu.com/assets/mip/img/33-5f943e59.gif')
+                            @media screen and (min-width: 768px)
+                                background-image url('https://boscdn.baidu.com/assets/mip/img/33-5408d175.png')
+                        &.advan-4
+                            &:before
+                                background-image url('https://boscdn.baidu.com/assets/mip/img/44-bb64152d.gif')
+                            background-image url('https://boscdn.baidu.com/assets/mip/img/44-bb64152d.gif')
+                            @media screen and (min-width: 768px)
+                                background-image url('https://boscdn.baidu.com/assets/mip/img/44-bbf66eff.png')
+
+                        @media screen and (max-width: 768px)
+                            right 21px
+                            bottom 40px
+                      &:hover
+                          .mip-advan-section-img
+                              &.advan-1
+                                  @media screen and (min-width: 768px)
+                                      background-image url('https://boscdn.baidu.com/assets/mip/img/11-7c872fd6.gif')
+                              &.advan-2
+                                  @media screen and (min-width: 768px)
+                                      background-image url('https://boscdn.baidu.com/assets/mip/img/22-ec1c9a3c.gif')
+                              &.advan-3
+                                  @media screen and (min-width: 768px)
+                                      background-image url('https://boscdn.baidu.com/assets/mip/img/33-5f943e59.gif')
+                              &.advan-4
+                                  @media screen and (min-width: 768px)
+                                      background-image url('https://boscdn.baidu.com/assets/mip/img/44-bb64152d.gif')
+
+
+
+
+    .footer-section
+        height 440px
+        box-sizing border-box
+        background #1e1e1e
+        padding 60px 100px
+        position relative
+        @media screen and (max-width: 768px)
+            height auto
+            padding 0 0 83px 0
+        .container
+            .pc
+                display flex
+                @media screen and (max-width: 768px)
+                    display none
+                >div
+                    flex 1
+                    h2
+                        color #fff
+                        font-size 16px
+                        font-weight normal
+                        margin-bottom 20px
+                    a
+                        font-size 14px
+                        display block
+                        color #999
+                        line-height 34px
+                        &:hover,&:active
+                            color #3388ff
+                    .qr-code
+                        width 100px
+                        height 100px
+                        border-radius 3px
+                        margin 10px 0
+                        background url('https://boscdn.baidu.com/assets/mip/img/mip-qq-qr.png') no-repeat
+                        background-size cover
+                    &:last-child
+                        margin-left 50px
+            .mobile
+                display none
+                @media screen and (max-width: 768px)
+                    display block
+                    text-align center
+                    font-size 14px
+                    overflow hidden
+                    .qr-code
+                        width 100px
+                        height 100px
+                        border-radius 3px
+                        margin 60px auto 10px auto
+                        background url('https://boscdn.baidu.com/assets/mip/img/mip-qq-qr.png') no-repeat
+                        background-size cover
+                    a
+                        color #999
+                        display block
+
+                    .mobile-contact
+                        color rgba(255, 255, 255, 0.36)
+                        margin-top 40px
+                        a
+                            display inline-block
+                            padding 7px 10px
+                            border-radius 3px
+                            background rgba(255, 255, 255, 0.08)
+
+                            &:active
+                              background rgba(255, 255, 255, 0.16)
+
+        p
+            position absolute
+            bottom 60px
+            left 50%
+            transform translateX(-50%)
+            text-align center
+            color #999999
+            opacity 0.54
+            @media screen and (max-width: 768px)
+                bottom 29px
+
+
+@media screen and (min-width: 1200px)
+    .container
+        width 1000px
+
+@media screen and (min-width: 768px) and (max-width: 1200px)
+    .container
+        width 750px

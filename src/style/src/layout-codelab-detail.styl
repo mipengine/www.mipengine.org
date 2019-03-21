@@ -1,0 +1,112 @@
+.step-tabs-wrapper {
+  margin-top: 60px;
+  .step-head {
+    width: 100%;
+    background: #f8f8f8;
+    padding: 60px 100px;
+    box-sizing: border-box;
+    .step-head-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      .title {
+        font-size: 24px;
+        color: #000;
+        margin-bottom: 13px;
+      }
+      .des {
+        font-size: 16px;
+        color: #555;
+        line-height: 30px;
+      }
+    }
+
+  }
+  .step-content-main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 100px;
+
+    // 重写了组件的样式
+    .step-menu-wrapper {
+      li {
+        width: 270px;
+        padding:0;
+        a {
+          font-size: 18px;
+          display: inline-block;
+          padding-top: 50px;
+          width: 100%;
+        }
+
+        &.active {
+          color: #000;
+        }
+      }
+    }
+
+
+    .step-content-wrapper {
+      padding: 50px 0;
+      margin-left: 270px;
+      .step-content-list {
+        max-width: 1000px;
+        margin: 0 auto;
+        .content-item {
+          display: none;
+          line-height: 30px;
+
+          &.show {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .step-tabs-wrapper {
+    .step-head {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .step-content-main {
+      padding: 0 25px;
+      // 重写了组件的样式
+      .step-menu-wrapper {
+        li {
+          width: 260px;
+        }
+      }
+      .step-content-wrapper {
+        margin-left: 185px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .step-tabs-wrapper {
+    .step-head {
+      padding: 40px 25px 30px;
+    }
+    .step-content-main {
+      padding: 0 25px;
+
+      .step-content-menu {
+        display: none;
+        // 重写了组件的样式
+        .step-menu-wrapper {
+          li {
+            width: 260px;
+          }
+        }
+      }
+
+      .step-content-wrapper {
+        margin-left: 0;
+      }
+    }
+  }
+}

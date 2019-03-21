@@ -1,11 +1,13 @@
 {
     "eslint": {
         "env": {
-            "es6": false,
-            "node": true
+            "node": true,
+            "browser": false
         },
+
         "rules": {
-            "no-console": 0
+            "no-console": 0,
+            "fecs-no-require": "off"
         }
     }
 }

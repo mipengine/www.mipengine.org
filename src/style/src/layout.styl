@@ -1,0 +1,31 @@
+.layout-sidebar
+  background #fff
+  bottom 0
+  overflow auto !important
+  z-index 20000 !important
+  padding-left 90px
+  padding-right 0
+  box-sizing border-box
+  width 360px
+
+
+  .sidenav-wrapper
+    margin-top 30px !important
+    padding-bottom 45px
+
+  @media screen and (max-width: 1200px)
+    padding-left 15px
+    width 275px
+    // padding-right 0
+    // .sidenav-wrapper
+    //   margin-left 25px !important
+    //   width 250px !important
+
+  @media screen and (max-width: 768px)
+    display none
+
+
+@media screen and (min-width: 768px)
+  body
+    &:after
+      display none
