@@ -10,7 +10,7 @@
     "dev": "cross-env NODE_ENV=development npm run build && edp webserver start --port 8627",
     "clean": "rm -rf api codelabs guide components extensions img assets/img mip docs tmp index.html v2 ui",
     "cp:bce": "cp -r ./v2 ../mip_online/bce-www.mipengine.org",
-    "refresh": "npm run build:css && npm run build && sh build.sh",
+    "refresh": "npm run build && sh build.sh",
     "server": "npm run build:css && npm run build && edp webserver start --port 9527",
     "deploy": "npm run build:css && npm run build",
     "lint": "npm run lint:js",
