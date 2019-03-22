@@ -147,10 +147,4 @@ function getRoute (config, path) {
   }
 }
 
-// compiler.on(compiler.STAGES.DONE, function () {
-//   compiler.store.get('data', 'docurls').then(data => {
-//     console.log(data)
-//   })
-// })
-
 module.exports = compiler
