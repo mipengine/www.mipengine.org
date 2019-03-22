@@ -3,6 +3,7 @@ var exec = require('child_process').exec;
 var cmdStr = 'sh ./build.sh';
 var count = 0;
 
+
 function scheduleCronstyle(){
     var timer = schedule.scheduleJob('* */5 * * * *', function(){
         exec(cmdStr, function(err,stdout,stderr){
