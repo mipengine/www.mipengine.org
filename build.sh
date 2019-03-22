@@ -15,6 +15,6 @@ cd ..
 
 echo "------上传bos-----"
 #上传
-edp bos newMIP2.zip bos://assets/mip2/zip
+baidubce bos newMIP2.zip bos://assets/mip2/zip
 
 set -e
