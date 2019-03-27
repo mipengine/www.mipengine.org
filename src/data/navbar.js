@@ -130,8 +130,18 @@ module.exports = () => [
     "name": "GitHub",
     "url": "https://github.com/mipengine/mip2",
     "blank": true
-  }
-  ,
+  },
+  {
+    "name": "最新动态",
+    // "path": "docs/news/index.md",
+    "activeUrl": /^\/(v2\/)?news/,
+    "children": [
+      {
+        "name": "通知",
+        "path": "docs/news/index.md"
+      }
+    ]
+  },
   {
     "name": "回到旧版",
     "url": "https://www.mipengine.org/v1.html",
