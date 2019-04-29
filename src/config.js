@@ -193,6 +193,17 @@ module.exports = {
         }
         return urlPrefix + filePath.slice(5)
       }
+    },
+    {
+      path: /^docs\/news/,
+      url (filePath) {
+        let [pathname, hash] = filePath.split('#')
+        if (/\.md$/.test(pathname)) {
+          pathname = urlPrefix + pathname.slice(5, -3) + '.html'
+          return pathname + (hash != null ? `#${hash}` : '')
+        }
+        return urlPrefix + filePath.slice(5)
+      }
     }
     // ,
     // {
@@ -246,6 +257,12 @@ module.exports = {
           return `docs/codelabs/${match[1]}`
         }
         // return 'docs/codelabs'
+      }
+    },
+    {
+      url: /^\/v2\/news/,
+      menu (url) {
+        return 'docs/news'
       }
     }
     // ,

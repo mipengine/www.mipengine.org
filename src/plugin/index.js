@@ -19,6 +19,7 @@ const Layout = require('./layout')
 const Static = require('./static')
 const ComponentPreview = require('./component-preview')
 const TableWrapper = require('./table-wrapper')
+const LatestNews = require('./latest-news')
 
 // const Init = require('./init');
 
@@ -38,6 +39,7 @@ module.exports = {
   removeHeadingId: new RemoveHeadingId(),
   menuInfo: new MenuInfo(),
   layout: new Layout(),
-  static: new Static()
+  static: new Static(),
+  latestNews: new LatestNews()
   // init: new Init()
 }
