@@ -141,11 +141,12 @@ module.exports = () => [
         "path": "docs/news/index.md"
       }
     ]
-  },
-  {
-    "name": "回到旧版",
-    "url": "https://www.mipengine.org/v1.html",
-    "blank": true
   }
+  // ,
+  // {
+  //   "name": "回到旧版",
+  //   "url": "https://www.mipengine.org/v1.html",
+  //   "blank": true
+  // }
 ]
 /* eslint-enable */

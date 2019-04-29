@@ -2,6 +2,7 @@
 
 {{ block: content }}
 <div class="home-wrapper">
+    <!-- banner -->
     <section class="top-section">
         <div class="container">
             <div class="top-text">
