@@ -135,9 +135,9 @@
   },
   {
     "name": "mip-fixed",
-    "chinese": "折叠节点",
+    "chinese": "悬浮布局",
     "type": "布局",
-    "desc": "折叠隐藏节点，可记录用户上次行为",
+    "desc": "悬浮元素整体使用方案",
     "preview": true
   },
   {
