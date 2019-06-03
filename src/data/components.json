@@ -475,5 +475,75 @@
     "desc": "在给定文本内容和文本容器大小的情况下，调整字体大小使文字塞满容器。",
     "type": "呈现",
     "preview": true
+  },
+  {
+    "name": "mip-animation",
+    "chinese": "增强动画",
+    "type": "媒体",
+    "desc": "用来定义和展示动画效果，在其内部定义一段 json 作为对动画效果的描述",
+    "preview": true
+  },
+  {
+    "name": "mip-custom",
+    "chinese": "定制化 MIP",
+    "type": "呈现",
+    "desc": "定制化 MIP 组件，想在页面中加入定制化内容，必须引入这个组件",
+    "preview": false
+  },
+  {
+    "name": "mip-date-display",
+    "chinese": "时间显示组件",
+    "type": "呈现",
+    "desc": "用于在 MIP 页面中显示不同格式的时间",
+    "preview": true
+  },
+  {
+    "name": "mip-login-done",
+    "chinese": "登录跳转组件",
+    "type": "动态内容",
+    "desc": "与 mip-access 配套使用，提供了登录完成后跳转的页面。mip-login-done 本身不能独立使用",
+    "preview": false
+  },
+  {
+    "name": "mip-stats-google",
+    "chinese": "GA统计组件",
+    "type": "统计",
+    "desc": "添加 Google GA 统计",
+    "preview": false
+  },
+  {
+    "name": "mip-viz-vega",
+    "chinese": "基于 vega 的可视化组件",
+    "type": "呈现",
+    "desc": "基于 vega 的 mip 可视化组件",
+    "preview": false
+  },
+  {
+    "name": "mip-widget-full-height",
+    "chinese": "全高页面组件",
+    "type": "呈现",
+    "desc": "用于展现全高的 MIP 页面，需要配合 iframe-shell 使用",
+    "preview": false
+  },
+  {
+    "name": "mip-user-notification",
+    "chinese": "消息通知组件",
+    "type": "呈现",
+    "desc": "用于站点向用户发出通知",
+    "preview": false
+  },
+  {
+    "name": "mip-selector",
+    "chinese": "选择器组件",
+    "type": "动态内容",
+    "desc": "控制元素成为可选项，完成选择功能",
+    "preview": true
+  },
+  {
+    "name": "mip-sticky-ad",
+    "chinese": "广告容器组件",
+    "type": "广告",
+    "desc": "用于将广告固定在页面的底部",
+    "preview": false
   }
 ]
