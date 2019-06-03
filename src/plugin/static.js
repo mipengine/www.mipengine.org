@@ -12,7 +12,8 @@ const renderer = require('../utils/renderer')
 
 module.exports = class Static {
   apply (on, app) {
-    let dist = path.resolve(process.cwd())
+    let dist = path.resolve('../..')
+    // let dist = path.resolve(process.cwd())
 
     on(app.STAGES.DONE, async () => {
       let docPaths = await app.store.get('data', 'docurls')
