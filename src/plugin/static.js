@@ -12,7 +12,7 @@ const renderer = require('../utils/renderer')
 
 module.exports = class Static {
   apply (on, app) {
-    let dist = path.resolve('../..')
+    let dist = path.resolve(__dirname, '../..')
     // let dist = path.resolve(process.cwd())
 
     on(app.STAGES.DONE, async () => {

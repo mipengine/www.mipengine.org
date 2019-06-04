@@ -75,7 +75,7 @@ module.exports = class ComponentPreview {
           return
         }
 
-        let dist = path.resolve('../..')
+        let dist = path.resolve(__dirname, '../..')
         // let dist = path.resolve(process.cwd())
 
         let fileFullPath = fileInfo.fullPath
