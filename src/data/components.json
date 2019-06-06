@@ -545,5 +545,12 @@
     "type": "广告",
     "desc": "用于将广告固定在页面的底部",
     "preview": false
+  },
+  {
+    "name": "mip-position-observer",
+    "chinese": "位置监听组件",
+    "type": "动态内容",
+    "desc": "用于在用户滑动屏幕的时候监听元素的位置信息，发出 `enter` `exit` `scroll` 事件",
+    "preview": false
   }
 ]
