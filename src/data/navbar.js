@@ -75,8 +75,13 @@ module.exports = () => [
         "activeUrl": /^\/(v2\/)?components/
       },
       {
-        "name": "贡献组件代码",
+        "name": "提交站长组件代码",
         "path": "docs/contribute/getting-start/how-to-contribute.md",
+        "activeUrl": /^\/(v2\/)?contribute/
+      },
+      {
+        "name": "贡献官方组件代码",
+        "path": "docs/contribute/getting-start/how-to-contribute-mip-extensions.md",
         "activeUrl": /^\/(v2\/)?contribute/
       },
       {
