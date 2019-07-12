@@ -218,13 +218,6 @@
     "preview": true
   },
   {
-    "name": "mip-city-selection",
-    "chinese": "城市选择组件",
-    "type": "呈现",
-    "desc": "mip-city-selection 分组选择组件，可用于城市分组，英文名分组，颜色分组等",
-    "preview": true
-  },
-  {
     "name": "mip-confirm",
     "chinese": "提示框",
     "type": "动态内容",
@@ -552,5 +545,19 @@
     "type": "动态内容",
     "desc": "用于在用户滑动屏幕的时候监听元素的位置信息，发出 `enter` `exit` `scroll` 事件",
     "preview": false
+  },
+  {
+    "name": "mip-autocomplete",
+    "chinese": "input 提示框",
+    "type": "动态内容",
+    "desc": "基于自定义配置，根据用户输入给予用户提示，类似百度搜索的下拉提示。",
+    "preview": false
+  },
+  {
+    "name": "mip-modal",
+    "chinese": "模态框",
+    "type": "动态内容",
+    "desc": "模态框可以在页面中央打开一个浮层，与用户进行交互。",
+    "preview": true
   }
 ]
