@@ -11,13 +11,9 @@
     <link rel="icon" href="https://www.mipengine.org/favicon.ico">
     <!-- <link rel="stylesheet" href="https://bos.nj.bpc.baidu.com/assets/mip/projects/mip.css"> -->
     <!-- <link rel="stylesheet" href="http://172.18.19.102:8080/dist/mip.css"> -->
-    {{ if: ${development} }}
-    <link rel="stylesheet" type="text/css" href="/src/style/dist/index.css">
-    {{ else }}
     <style mip-custom>
       ${css|raw}
     </style>
-    {{ /if }}
   </head>
   <body>
     {{ use:layout-navbar(navbar = ${navbar}, navIndex = ${navIndex}) }}
