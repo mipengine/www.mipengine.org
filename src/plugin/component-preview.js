@@ -99,7 +99,7 @@ module.exports = class ComponentPreview {
               .replace(/```\s$/, '')
 
             let width = 320
-            let height = 568
+            let height = 427
 
             let caseUrl = obj.url.replace(/^\//, '').replace(/\.html$/, '') + `-case-${i}.html`
             let editUrl = obj.url.replace(/^\//, '').replace(/\.html$/, '') + `-edit-${i}.html`

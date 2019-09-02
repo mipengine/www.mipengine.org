@@ -53,6 +53,9 @@ module.exports = class Layout {
         // 提取样式
         let {style, html} = extractStyle(originalHtml)
 
+        // 将 <script type="application/json"></script> 块内部的双引号被转义的单引号双引号给替换回来
+        html = scriptJson(html)
+
         // html 组件替换
         html = heading(html)
         html = link(html, app)
@@ -291,6 +294,7 @@ async function image (html, app) {
   let sizes = await Promise.all(srcs.map(
     src => {
       src = src.replace(/^\//, '')
+      // return  Promise.resolve({width: 320, height: 320})
       return getImageSize(
         src,
         app.config.rootDir,
@@ -477,3 +481,18 @@ function processMenu (menu, app, shouldDeepCopy = true) {
 
   return menu
 }
+
+function scriptJson (html) {
+  return html.replace(
+    /<script type="application\/json">([\s\S]+?)<\/script>/mg,
+    function (full, content) {
+      content = content.replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/@@/g, ':')
+        .replace(/@/g, '.')
+
+      return `<script type="application/json">${content}</script>`
+    }
+  )
+}
+

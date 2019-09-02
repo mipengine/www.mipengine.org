@@ -42,15 +42,25 @@ module.exports = () => [
         "activeUrl": /^\/(v2\/)?docs/
       },
       {
+        "name": "MIP 改造规范",
+        "path": "docs/docs/mip-standard/mip-html-spec.md",
+        "activeUrl": /^\/(v2\/)?docs/
+      },
+      {
+        "name": "提升 MIP 交互性",
+        "path": "docs/docs/interactive-mip/introduction.md",
+        "activeUrl": /^\/(v2\/)?docs/
+      },
+      {
         "name": "Codelab",
         "path": "docs/codelabs",
         "activeUrl": /^\/(v2\/)?codelabs/
       },
-      {
-        "name": "MIP 视频课程",
-        "url": "https://bit.baidu.com/course/datalist/column/120.html",
-        "blank": true
-      },
+      // {
+      //   "name": "MIP 视频课程",
+      //   "url": "https://bit.baidu.com/course/datalist/column/120.html",
+      //   "blank": true
+      // },
       {
         "name": "常见问题",
         "url": "https://github.com/mipengine/mip/wiki/MIP-%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%A4%A7%E5%85%A8",

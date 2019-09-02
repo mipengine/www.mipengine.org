@@ -40,6 +40,12 @@ module.exports = class LatestNews {
       if (!newsIndex.banner) {
         return
       }
+      // 超时
+      if (newsIndex.end) {
+        if (new Date(newsIndex.end) < new Date()) {
+          return
+        }
+      }
 
       let indexInfo = await app.getDoc('docs/index')
       indexInfo.html = indexInfo.html.replace(
