@@ -113,10 +113,10 @@
   },
 
   {
-    "name": "mip-bind",
-    "chinese": "绑定数据组件",
+    "name": "mip-data",
+    "chinese": "MIP 数据加载器",
     "type": "动态内容",
-    "desc": "<mip-bind> 是以数据驱动页面更新的功能，开发者通过配置数据信息，并绑定在相应 DOM 上，就可以轻松做到数据变动后 DOM 元素随之变动的效果",
+    "desc": "<mip-data> 是 MIP 数据驱动机制当中的数据加载器。开发者通过配置数据信息，并绑定在相应 DOM 上，就可以轻松做到数据变动后 DOM 元素随之变动的效果",
     "preview": false
   },
   {
@@ -295,20 +295,6 @@
     "preview": false
   },
   {
-    "name": "mip-inservice-login",
-    "chinese": "登录授权组件",
-    "type": "动态内容",
-    "desc": "登录授权组件",
-    "preview": false
-  },
-  {
-    "name": "mip-inservice-pay",
-    "chinese": "极速服务 支付组件件",
-    "type": "动态内容",
-    "desc": "极速服务 支付组件",
-    "preview": false
-  },
-  {
     "name": "mip-lightbox",
     "chinese": "弹出层",
     "type": "布局",
@@ -327,7 +313,7 @@
     "chinese": "列表组件",
     "type": "动态内容",
     "desc": "可以渲染同步数据，或者异步请求数据后渲染",
-    "preview": [false, false, true, false]
+    "preview": true
   },
   {
     "name": "mip-map",
@@ -351,13 +337,6 @@
     "preview": true
   },
   {
-    "name": "mip-novel-video",
-    "chinese": "mip-novel-video 组件",
-    "type": "媒体",
-    "desc": "用来支持在 MIP 页中广告视频的使用",
-    "preview": false
-  },
-  {
     "name": "mip-range",
     "chinese": "拖动选择组件",
     "type": "动态内容",
@@ -368,7 +347,7 @@
     "name": "mip-script",
     "chinese": "自定义 JS 代码",
     "type": "动态内容",
-    "desc": "开发者可以在 mip-script 中编写自定义 JavaScript 代码来完成一些事情，使 MIP 页面交互更加灵活",
+    "desc": "开发者可以在 mip-script 中编写自定义 JS 代码，以扩展数据驱动的计算能力",
     "preview": false
   },
   {
@@ -377,13 +356,6 @@
     "type": "布局",
     "desc": "position:sticky 的 JS 兼容版本。页面元素滑动到顶部时自动贴顶",
     "preview": true
-  },
-  {
-    "name": "mip-shell-inservice",
-    "chinese": "极速服务 mip-shell 定制化组件",
-    "type": "布局",
-    "desc": "极速服务 mip-shell 定制化",
-    "preview": false
   },
   {
     "name": "mip-shell-xiaoshuo",
@@ -559,5 +531,12 @@
     "type": "动态内容",
     "desc": "模态框可以在页面中央打开一个浮层，与用户进行交互。",
     "preview": true
+  },
+  {
+    "name": "mip-linksubmit",
+    "chinese": "百度统计链接提交组件",
+    "type": "统计",
+    "desc": "实现 MIP 页面 URL 自动提交给百度统计的功能。",
+    "preview": false
   }
 ]

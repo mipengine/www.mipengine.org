@@ -48,11 +48,12 @@
                         <div class="mip-advan-section-img advan-1"></div>
                     </div>
                     <div>
-                        <h2>开放的接入技术</h2>
-                        <p>MIP 是一项永久的开源计划<br/>提供持续优化的解决方案</p>
-                        <a class="mip-advan-section-button" data-type="mip" href="${host}/v2/contribute/getting-start/component-spec.html">查看详情<i class="arrow"></i></a>
-                        <div class="mip-advan-section-img advan-2"></div>
+                        <h2>高效便捷的交互机制</h2>
+                        <p>提供事件驱动和数据驱动机制<br/>提供更为简单高效的组件互动方式</p>
+                        <a class="mip-advan-section-button" data-type="mip" href="${host}/v2/docs/interactive-mip/introduction.html">查看详情<i class="arrow"></i></a>
+                        <div class="mip-advan-section-img advan-4"></div>
                     </div>
+
                 </div>
                 <div class="mip-advan-section">
                     <div>
@@ -62,11 +63,12 @@
                         <div class="mip-advan-section-img advan-3"></div>
                     </div>
                     <div>
-                        <h2>简单便捷的开发规范</h2>
-                        <p>提供 MVVM 机制降低组件开发难度<br/>提供更为简单高效的组件互动方式</p>
-                        <a class="mip-advan-section-button" data-type="mip" href="${host}/v2/contribute/development/component-syntax.html">查看详情<i class="arrow"></i></a>
-                        <div class="mip-advan-section-img advan-4"></div>
+                        <h2>开放的接入技术</h2>
+                        <p>MIP 是一项永久的开源计划<br/>提供持续优化的解决方案</p>
+                        <a class="mip-advan-section-button" data-type="mip" href="${host}/v2/contribute/getting-start/component-spec.html">查看详情<i class="arrow"></i></a>
+                        <div class="mip-advan-section-img advan-2"></div>
                     </div>
+
                 </div>
             </div>
         </div>

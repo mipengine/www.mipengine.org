@@ -484,17 +484,14 @@ function processMenu (menu, app, shouldDeepCopy = true) {
 
 function scriptJson (html) {
   return html.replace(
-    /<mip-data([\s\S]*?)>\w*?<script type="application\/json">([\s\S]+?)<\/script>\w*?<\/mip-data>/mg,
-    function (full, attrs, content) {
+    /<script type="application\/json">([\s\S]+?)<\/script>/mg,
+    function (full, content) {
       content = content.replace(/&quot;/g, '"')
         .replace(/&#39;/g, "'")
         .replace(/@@/g, ':')
         .replace(/@/g, '.')
 
-      return '' +
-`<mip-data${attrs}>
-  <script type="application/json">${content}</script>
-</mip-data>`
+      return `<script type="application/json">${content}</script>`
     }
   )
 }
