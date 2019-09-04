@@ -348,7 +348,7 @@
     "chinese": "自定义 JS 代码",
     "type": "动态内容",
     "desc": "开发者可以在 mip-script 中编写自定义 JS 代码，以扩展数据驱动的计算能力",
-    "preview": false
+    "preview": true
   },
   {
     "name": "mip-semi-fixed",

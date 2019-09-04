@@ -52,6 +52,11 @@ module.exports = () => [
         "activeUrl": /^\/(v2\/)?docs/
       },
       {
+        "name": "MIP 缓存说明",
+        "path": "docs/docs/mip-standard/mip-cache-spec.md",
+        "activeUrl": /^\/(v2\/)?docs/
+      },
+      {
         "name": "Codelab",
         "path": "docs/codelabs",
         "activeUrl": /^\/(v2\/)?codelabs/
