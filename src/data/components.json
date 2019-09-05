@@ -523,7 +523,7 @@
     "chinese": "input 提示框",
     "type": "动态内容",
     "desc": "基于自定义配置，根据用户输入给予用户提示，类似百度搜索的下拉提示。",
-    "preview": false
+    "preview": true
   },
   {
     "name": "mip-modal",
