@@ -9,9 +9,9 @@ compiler_entry=$dir/src/index.js
 
 rm -rf api codelabs guide components extensions img assets/img mip docs tmp index.html v2 ui contribute about news
 
-node $webpack_bin --config $webpack_config >> errlog 2>&1
+~/node/bin/node $webpack_bin --config $webpack_config >> errlog 2>&1
 
-node $compiler_entry >> errlog 2>&1
+~/node/bin/node $compiler_entry >> errlog 2>&1
 
 if [ $? -ne 0 ]; then
   echo "docs build failed"

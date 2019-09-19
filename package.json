@@ -4,8 +4,9 @@
   "description": "mip website",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean && npm run build:css && node src/index.js",
+    "build": "npm run clean && npm run build:css && npm run build:doc",
     "build:css": "webpack --config src/style/webpack.config.js",
+    "build:doc": "node src/index.js",
     "dev:css": "cross-env NODE_ENV=development npm run build && webpack --config src/style/webpack.config.js --watch",
     "dev": "cross-env NODE_ENV=development npm run build && edp webserver start --port 8627",
     "clean": "rm -rf api codelabs guide components extensions img assets/img mip docs tmp index.html v2 ui contribute about news",
