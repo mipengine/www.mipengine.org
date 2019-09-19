@@ -9,6 +9,13 @@ node node_modules/webpack/bin/webpack.js --config src/style/webpack.config.js
 
 node src/index.js
 
+if [ $? -ne 0 ]; then
+  echo "docs build failed"
+  exit 1
+else
+  echo "build successful"
+fi
+
 # 移除原zip包
 echo "------zip to v2-----"
 
@@ -18,6 +25,12 @@ fi
 
 # 压缩
 cd v2
+
+if [ $? -ne 0 ]; then
+  echo "docs not found"
+  exit 1
+fi
+
 zip -r -q ../newMIP2.zip ./*
 cd ..
 

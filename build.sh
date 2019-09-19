@@ -10,7 +10,14 @@ fi
 
 # 压缩
 cd v2
+
+if [ $? -ne 0 ]; then
+  echo "docs not found"
+  exit 1
+fi
+
 zip -r -q ../newMIP2.zip ./*
+
 cd ..
 
 echo "------上传bos-----"
