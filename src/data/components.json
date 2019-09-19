@@ -543,7 +543,7 @@
     "name": "mip-action-macro",
     "chinese": "MIP 可交互行为扩展",
     "type": "动态内容",
-    "desc": "为 MIP on 表达式拓展 1）方法复用 2）方法执行前置判断 等功能。",
+    "desc": "为 MIP on 表达式拓展 1）行为封装 2）方法执行前置判断 3）有限运算支持 等功能。",
     "preview": true
   },
   {
