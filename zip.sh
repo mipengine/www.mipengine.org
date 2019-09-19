@@ -1,13 +1,17 @@
 
 set +e
 
-# npm run build
+cd `dirname $0`
+dir=`pwd`
+webpack_bin=$dir/node_modules/webpack/bin/webpack.js
+webpack_config=$dir/src/style/webpack.config.js
+compiler_entry=$dir/src/index.js
 
 rm -rf api codelabs guide components extensions img assets/img mip docs tmp index.html v2 ui contribute about news
 
-node node_modules/webpack/bin/webpack.js --config src/style/webpack.config.js
+node $webpack_bin --config $webpack_config
 
-node src/index.js
+node $compiler_entry
 
 if [ $? -ne 0 ]; then
   echo "docs build failed"
