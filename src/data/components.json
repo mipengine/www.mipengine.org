@@ -534,9 +534,9 @@
   },
   {
     "name": "mip-linksubmit",
-    "chinese": "百度统计链接提交组件",
+    "chinese": "百度站长平台链接自动提交组件",
     "type": "统计",
-    "desc": "实现 MIP 页面 URL 自动提交给百度统计的功能。",
+    "desc": "实现 MIP 页面 URL 自动提交给百度站长平台的功能。",
     "preview": false
   },
   {
