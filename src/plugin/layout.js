@@ -280,9 +280,9 @@ async function image (html, app) {
   let srcs = labels.map(label => label.replace(imgRegExp, '$2').replace(/["']/g, ''))
     .map(src => {
       if (src === 'https://BabyLillian.github.io/images/授权登录.png') {
-        src = 'https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/docs/shouquandenglu-d2c7f54d.png'
+        src = 'https://mip-doc.cdn.bcebos.com/mipengine-org/assets/docs/shouquandenglu-d2c7f54d.png'
       } else if (src === 'https://BabyLillian.github.io/images/授权弹窗.png') {
-        src = 'https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/docs/shouquantanchuang-e042e4fd.png'
+        src = 'https://mip-doc.cdn.bcebos.com/mipengine-org/assets/docs/shouquantanchuang-e042e4fd.png'
       }
 
       return src

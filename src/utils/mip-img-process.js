@@ -6,21 +6,21 @@
 
 // 手机截图需要尺寸限制，需要将图片链接添加在此处，max-width: 400px
 const processList400 = [
-  'http://bos.nj.bpc.baidu.com/assets/mip/codelab/home-init.png',
-  'http://boscdn.bpc.baidu.com/assets/mip/codelab/shell/use-shell.png',
-  'http://boscdn.bpc.baidu.com/assets/mip/codelab/shell/transition-forward.png',
-  'http://boscdn.bpc.baidu.com/assets/mip/codelab/shell/use-shell-2.png',
-  'http://boscdn.bpc.baidu.com/assets/mip/codelab/shell/use-shell-3.png',
-  'http://boscdn.bpc.baidu.com/assets/mip/codelab/shell/transition-forward-2.png',
-  'http://boscdn.bpc.baidu.com/assets/mip/codelab/shell/transition-backward.png',
+  'https://mip-doc.cdn.bcebos.com/mipengine-org/assets/mip/codelab/home-init.png',
+  'https://mip-doc.cdn.bcebos.com/mipengine-org/assets/mip/codelab/shell/use-shell.png',
+  'https://mip-doc.cdn.bcebos.com/mipengine-org/assets/mip/codelab/shell/transition-forward.png',
+  'https://mip-doc.cdn.bcebos.com/mipengine-org/assets/mip/codelab/shell/use-shell-2.png',
+  'https://mip-doc.cdn.bcebos.com/mipengine-org/assets/mip/codelab/shell/use-shell-3.png',
+  'https://mip-doc.cdn.bcebos.com/mipengine-org/assets/mip/codelab/shell/transition-forward-2.png',
+  'https://mip-doc.cdn.bcebos.com/mipengine-org/assets/mip/codelab/shell/transition-backward.png',
   'https://mip-project.github.io/assets/img/docs/codelabs/component-development/images/codelab-dev-preview.png',
-  'http://boscdn.bpc.baidu.com/assets/mip2/page/bottom-shell-2.png',
+  'https://mip-doc.cdn.bcebos.com/mipengine-org/assets/mip2/page/bottom-shell-2.png',
   'https://mip-project.github.io/assets/img/docs/codelabs/global-data/images/city-selector.png'
 ]
 
 // max-width: 800px
 const processList800 = [
-  'http://bos.nj.bpc.baidu.com/assets/mip/codelab/project.jpg'
+  'https://mip-doc.cdn.bcebos.com/mipengine-org/assets/mip/codelab/project.jpg'
 ]
 
 /**

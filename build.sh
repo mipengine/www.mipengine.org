@@ -22,6 +22,6 @@ cd ..
 
 echo "------上传bos-----"
 #上传
-baidubce bos --put-object newMIP2.zip bos://assets/mip2/zip/
+baidubce bos --put-object newMIP2.zip bos://mip-doc/mipengine-org/docs/
 
 set -e
