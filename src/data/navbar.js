@@ -139,11 +139,11 @@ module.exports = () => [
         "url": "https://www.mipengine.org/mippath.html",
         "blank": true
       },
-      {
-        "name": "MIP 组件审核平台",
-        "url": "https://www.mipengine.org/platform/mip",
-        "blank": true
-      }
+    //   {
+    //     "name": "MIP 组件审核平台",
+    //     "url": "https://www.mipengine.org/platform/mip",
+    //     "blank": true
+    //   }
     ]
   },
   {
